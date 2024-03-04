@@ -12,7 +12,7 @@
   {{ partial "partials/hero/basic.html" . }}
   {{ end }}
   {{ end }}
-  <div class="p-8">
+  <div class="p-8 max-w-7xl mx-auto px-16">
   <header id="single_header" class="mt-5 max-w-prose">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
     {{ partial "breadcrumbs.html" . }}

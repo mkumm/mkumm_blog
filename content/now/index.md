@@ -12,7 +12,7 @@ This is a [now page](https://nownownow.com/about). Derek Siver has inspired [a f
 
 :poland: Updated March 1, 2024 from Poland!
 
-## Still Working at Simplebet
+## Still Working at Simplebet!
 
 Stories of my unemployment have been greatly exaggerated. I reposted a LinkedIn story about a coworker who is currenlty open for work and somehow that ended up being attributed to me in feeds. Even some close friends thought I was unemployed! :see_no_evil:
 
