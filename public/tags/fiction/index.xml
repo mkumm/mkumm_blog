@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fiction on mkumm.com</title>
-    <link>http://localhost:1313/tags/fiction/</link>
+    <link>http://localhost:61596/tags/fiction/</link>
     <description>Recent content in Fiction on mkumm.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-    <lastBuildDate>Sat, 02 Mar 2024 12:26:35 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 12:26:35 +0100</lastBuildDate><atom:link href="http://localhost:61596/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cursed Bunny</title>
-      <link>http://localhost:1313/posts/book-cursed-bunny/</link>
+      <link>http://localhost:61596/posts/book-cursed-bunny/</link>
       <pubDate>Sat, 02 Mar 2024 12:26:35 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/book-cursed-bunny/</guid>
+      <guid>http://localhost:61596/posts/book-cursed-bunny/</guid>
       <description> A Cursed Bunny Indeed # </description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-cursed-bunny/featured_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-cursed-bunny/featured_cover.jpg" />
     </item>
     
   </channel>
