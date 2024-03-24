@@ -32,6 +32,8 @@ I an amateur photographer and share some of my photos on [Instagram (@mkumm)](ht
 and [Flickr.com (@mkumm)](https://www.flickr.com/photos/mkumm/). My main camera is my portable [Nikon z50](https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/)
 a really excellent camera for price.
 
+![](mkumm.png)
+
 ### Music Creation
 
 I take a stab at some music creation with Ableton and played the violin through my first year of college.

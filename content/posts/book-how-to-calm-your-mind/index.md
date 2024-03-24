@@ -9,4 +9,6 @@ tags = ['books']
 
 How to calm your mind...
 
+and now for some changes
+
 This is how you write a blog!
