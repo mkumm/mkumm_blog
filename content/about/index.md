@@ -6,19 +6,26 @@ draft = false
 
 ## TL;DR;
 
-I was born in a suburb of Detroit and I am now living in Krakow, Poland. I work as an Elixir Developer for Simplebet. I have family (and a house) in Detroit, so I travel back often.
+I was born in a suburb of Detroit and I am now living in Krakow, Poland. I work as an Elixir Developer for Simplebet. I have family, friends, and a house in Detroit, so I travel back often.
 
-## Work
+## Current Work
 
-I love my work as an Elixir Developer at [Simplebet](https://www.simplebet.io). I work with amazong people, some of the brightest
-in the Elixir community! I love the gaming industry and Elixir is easily my favorite language to code in. 
+My full time day job lets me work in Elixir for a data supplier to sport books; allowing them to offer in-game betting propositions. I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir Phoenix LiveView and Surface. I am starting to get more interested in the Machine Learning and Site Reliability Engineering as well as continue to master Elixir/Phoenix.
+
+## Previousl Work
+
+My professional career has followed to simulatanuos paths. One in technology and the other in business management and leadership. Although this may seem like a strange path, I never saw them as that different.
+
+### Development
+
+### Leadership
 
 Professionally I have been lucky enough to create in C, PHP, Python, and Elixir with most of the web
 technologies that complement the languages. These days I play around in Rust, Haskell, Ocaml,
 Go, Gleam, and others as well as the technologies supporting the current wave of AI.
 
 In the past I have had several leadership roles (CTO, Operations Management, IT Director, Development Manager) and have enjoyed
-all my jobs for different reasons but generally I prefer coding. 
+all my jobs for different reasons but generally I prefer coding.
 
 ## Hobbies and Interests
 
@@ -87,19 +94,15 @@ The following are my current tool choices to support my work and hobbies.
 
 - **Macbook Pro M1 16-inch** My work supplied laptop.
 - **Macbook Pro M1 16-inch** My dedicated personal laptop.
-- **Macbook Air M3 13-inch** The perfect companion for remote work and travel. 
+- **Macbook Air M3 13-inch** The perfect companion for remote work and travel.
 - **Philips 27-inch PHL 276E8V** A super affordable second display.
 - **Benq ScreenBar** One of the my best purchases. Not only providing spot lighting only where I want it, it also helps reduce eye strain (for reasons I don't understand).
 - **iPhone 13 ProMax** More tha 2 years old and still works great for my purposes.
-- **Nikon z50** a really great camera body for walking around all day and taking photos. I have 2 lenses, the **Nikkor DX 16-50 3.5-6.3** and the **NIKKOR DX 24/1.7** 
-
-
-
+- **Nikon z50** a really great camera body for walking around all day and taking photos. I have 2 lenses, the **Nikkor DX 16-50 3.5-6.3** and the **NIKKOR DX 24/1.7**
 
 My main workhorse is a Macbook Pro M1. I have a dedicated machine each for work and personal. I also have a portable
-Macbook air 13 inch travel and "change of scenery" moments. 
+Macbook air 13 inch travel and "change of scenery" moments.
 
 ### Development Software
-
 
 [resume](http://resume.com)

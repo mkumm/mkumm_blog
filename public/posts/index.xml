@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mkumm.com</title>
-    <link>http://localhost:61596/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content on mkumm.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-    <lastBuildDate>Sat, 02 Mar 2024 12:40:00 +0100</lastBuildDate><atom:link href="http://localhost:61596/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 12:40:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms 4th Edition</title>
-      <link>http://localhost:61596/posts/book-algorithms/</link>
+      <link>http://localhost:1313/posts/book-algorithms/</link>
       <pubDate>Sat, 02 Mar 2024 12:40:00 +0100</pubDate>
       
-      <guid>http://localhost:61596/posts/book-algorithms/</guid>
+      <guid>http://localhost:1313/posts/book-algorithms/</guid>
       <description>Books are great # Here is another book!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-algorithms/featured_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-algorithms/featured_cover.jpg" />
     </item>
     
     <item>
       <title>Cursed Bunny</title>
-      <link>http://localhost:61596/posts/book-cursed-bunny/</link>
+      <link>http://localhost:1313/posts/book-cursed-bunny/</link>
       <pubDate>Sat, 02 Mar 2024 12:26:35 +0100</pubDate>
       
-      <guid>http://localhost:61596/posts/book-cursed-bunny/</guid>
+      <guid>http://localhost:1313/posts/book-cursed-bunny/</guid>
       <description> A Cursed Bunny Indeed # </description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-cursed-bunny/featured_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-cursed-bunny/featured_cover.jpg" />
     </item>
     
     <item>
       <title>Book How to Calm Your Mind</title>
-      <link>http://localhost:61596/posts/book-how-to-calm-your-mind/</link>
+      <link>http://localhost:1313/posts/book-how-to-calm-your-mind/</link>
       <pubDate>Sat, 02 Mar 2024 11:57:07 +0100</pubDate>
       
-      <guid>http://localhost:61596/posts/book-how-to-calm-your-mind/</guid>
+      <guid>http://localhost:1313/posts/book-how-to-calm-your-mind/</guid>
       <description>A very good read # How to calm your mind&amp;hellip;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-how-to-calm-your-mind/featured_book_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-how-to-calm-your-mind/featured_book_cover.jpg" />
     </item>
     
   </channel>

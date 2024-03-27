@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mkumm.com</title>
-    <link>http://localhost:61596/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on mkumm.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-    <lastBuildDate>Sat, 02 Mar 2024 12:40:00 +0100</lastBuildDate><atom:link href="http://localhost:61596/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 12:40:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms 4th Edition</title>
-      <link>http://localhost:61596/posts/book-algorithms/</link>
+      <link>http://localhost:1313/posts/book-algorithms/</link>
       <pubDate>Sat, 02 Mar 2024 12:40:00 +0100</pubDate>
       
-      <guid>http://localhost:61596/posts/book-algorithms/</guid>
+      <guid>http://localhost:1313/posts/book-algorithms/</guid>
       <description>Books are great # Here is another book!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-algorithms/featured_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-algorithms/featured_cover.jpg" />
     </item>
     
     <item>
       <title>About Michael Kumm</title>
-      <link>http://localhost:61596/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 02 Mar 2024 12:30:00 +0100</pubDate>
       
-      <guid>http://localhost:61596/about/</guid>
-      <description>TL;DR; # I was born in suburb of Detroit and I am now living in Krakow, Poland.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/about/featured_fire.jpg" />
+      <guid>http://localhost:1313/about/</guid>
+      <description>TL;DR; # I was born in a suburb of Detroit and I am now living in Krakow, Poland.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/about/featured_about.jpg" />
     </item>
     
     <item>
       <title>Cursed Bunny</title>
-      <link>http://localhost:61596/posts/book-cursed-bunny/</link>
+      <link>http://localhost:1313/posts/book-cursed-bunny/</link>
       <pubDate>Sat, 02 Mar 2024 12:26:35 +0100</pubDate>
       
-      <guid>http://localhost:61596/posts/book-cursed-bunny/</guid>
+      <guid>http://localhost:1313/posts/book-cursed-bunny/</guid>
       <description> A Cursed Bunny Indeed # </description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-cursed-bunny/featured_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-cursed-bunny/featured_cover.jpg" />
     </item>
     
     <item>
       <title>Book How to Calm Your Mind</title>
-      <link>http://localhost:61596/posts/book-how-to-calm-your-mind/</link>
+      <link>http://localhost:1313/posts/book-how-to-calm-your-mind/</link>
       <pubDate>Sat, 02 Mar 2024 11:57:07 +0100</pubDate>
       
-      <guid>http://localhost:61596/posts/book-how-to-calm-your-mind/</guid>
+      <guid>http://localhost:1313/posts/book-how-to-calm-your-mind/</guid>
       <description>A very good read # How to calm your mind&amp;hellip;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/posts/book-how-to-calm-your-mind/featured_book_cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/book-how-to-calm-your-mind/featured_book_cover.jpg" />
     </item>
     
     <item>
       <title>What I&#39;m Doing Now</title>
-      <link>http://localhost:61596/now/</link>
+      <link>http://localhost:1313/now/</link>
       <pubDate>Thu, 01 Feb 2024 04:14:54 -0800</pubDate>
       
-      <guid>http://localhost:61596/now/</guid>
+      <guid>http://localhost:1313/now/</guid>
       <description>This is a now page.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:61596/now/featured_now.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/now/featured_now.png" />
     </item>
     
   </channel>
