@@ -4,24 +4,24 @@ date = 2024-03-02T12:30:00+01:00
 draft = false
 +++
 
-## TL;DR;
+## tl;dr (too long; didn't read)
 
-I was born in a suburb of Detroit and I am now living in Krakow, Poland. I work as an Elixir Developer for Simplebet. I have family, friends, and a house in Detroit, so I travel back often.
+I was born in a suburb of Detroit and I am now living in Krakow, Poland. I work as an [Elixir](https://elixir-lang.org/) Developer for [Simplebet](https://www.simplebet.ai/). I have family, friends, and a house in the Detroit area so I travel back to Michigan often.
 
 ## Current Work
 
-My full time day job lets me work in Elixir for a data supplier to sport books; allowing them to offer in-game betting propositions. I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir Phoenix LiveView and Surface. I am starting to get more interested in the Machine Learning and Site Reliability Engineering as well as continue to master Elixir/Phoenix.
+My full time day job lets me work in Elixir for a company that supplies data to sports books; allowing them to offer in-game bet. I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and Surface. I am starting to get more interested in Machine Learning and Site Reliability Engineering as well as continuing to master Elixir/Phoenix.
 
 ## Previousl Work
 
-My professional career has followed to simulatanuos paths. One in technology and the other in business management and leadership. Although this may seem like a strange path, I never saw them as that different.
+My professional career has followed to simultaneous paths. One in technology and the other in business management and leadership. Although this may seem like a strange path, I never saw them as that different.
 
 ### Development
 
 ### Leadership
 
 Professionally I have been lucky enough to create in C, PHP, Python, and Elixir with most of the web
-technologies that complement the languages. These days I play around in Rust, Haskell, Ocaml,
+technologies that complement the languages. These days I play around in Rust, Haskell, OCaml,
 Go, Gleam, and others as well as the technologies supporting the current wave of AI.
 
 In the past I have had several leadership roles (CTO, Operations Management, IT Director, Development Manager) and have enjoyed
@@ -34,8 +34,6 @@ all my jobs for different reasons but generally I prefer coding.
 I an amateur photographer and share some of my photos on [Instagram (@mkumm)](https://www.instagram.com/mkumm/)
 and [Flickr.com (@mkumm)](https://www.flickr.com/photos/mkumm/). My main camera is my portable [Nikon z50](https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/)
 a really excellent camera for price.
-
-![](mkumm.png)
 
 ### Music Creation
 
@@ -92,16 +90,16 @@ The following are my current tool choices to support my work and hobbies.
 
 ### Hardware
 
-- **Macbook Pro M1 16-inch** My work supplied laptop.
-- **Macbook Pro M1 16-inch** My dedicated personal laptop.
-- **Macbook Air M3 13-inch** The perfect companion for remote work and travel.
+- **MacBook Pro M1 16-inch** My work supplied laptop.
+- **MacBook Pro M1 16-inch** My dedicated personal laptop.
+- **MacBook Air M3 13-inch** The perfect companion for remote work and travel.
 - **Philips 27-inch PHL 276E8V** A super affordable second display.
 - **Benq ScreenBar** One of the my best purchases. Not only providing spot lighting only where I want it, it also helps reduce eye strain (for reasons I don't understand).
 - **iPhone 13 ProMax** More tha 2 years old and still works great for my purposes.
-- **Nikon z50** a really great camera body for walking around all day and taking photos. I have 2 lenses, the **Nikkor DX 16-50 3.5-6.3** and the **NIKKOR DX 24/1.7**
+- **Nikkon z50** a really great camera body for walking around all day and taking photos. I have 2 lenses, the **Nikkor DX 16-50 3.5-6.3** and the **NIKKOR DX 24/1.7**
 
-My main workhorse is a Macbook Pro M1. I have a dedicated machine each for work and personal. I also have a portable
-Macbook air 13 inch travel and "change of scenery" moments.
+My main workhorse is a MacBook Pro M1. I have a dedicated machine each for work and personal. I also have a portable
+MacBook air 13 inch travel and "change of scenery" moments.
 
 ### Development Software
 
