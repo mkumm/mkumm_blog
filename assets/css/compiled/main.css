@@ -2128,11 +2128,6 @@ select {
   background-color:rgba(var(--color-neutral-50), var(--tw-bg-opacity))
 }
 
-.bg-neutral-500 {
-  --tw-bg-opacity:1;
-  background-color:rgba(var(--color-neutral-500), var(--tw-bg-opacity))
-}
-
 .bg-neutral-500\/50 {
   background-color:rgba(var(--color-neutral-500), 0.5)
 }
@@ -2630,8 +2625,8 @@ select {
   opacity:0.6
 }
 
-.opacity-70 {
-  opacity:0.7
+.opacity-80 {
+  opacity:0.8
 }
 
 .mix-blend-normal {

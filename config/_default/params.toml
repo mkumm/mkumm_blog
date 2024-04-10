@@ -6,8 +6,9 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "ocean"
-defaultAppearance = "light"  # valid options: light or dark
+defaultAppearance = "light"    # valid options: light or dark
 autoSwitchAppearance = false
+showAppearanceSwitcher = false
 
 enableSearch = true
 enableCodeCopy = true
@@ -39,7 +40,7 @@ showScrollToTop = true
 layout = "hero"                 # valid options: page, profile, hero, card, background, custom
 homepageImage = "img/cover.png" # used in: hero, and card
 showRecent = true
-showRecentItems = 6
+showRecentItems = 3
 showMoreLink = true
 showMoreLinkDest = "/posts"
 cardView = true
@@ -94,8 +95,8 @@ excludedKinds = ["term"]
 
 [taxonomy]
 showTermCount = true
-showHero = false
-# heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+showHero = true
+heroStyle = "basic"         # valid options: basic, big, background, thumbAndBackground
 showBreadcrumbs = false
 showViews = false
 showLikes = false
@@ -106,9 +107,9 @@ cardView = false
 tag = 'tags'
 
 [term]
-showHero = false
-# heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-showBreadcrumbs = false
+showHero = true
+heroStyle = "basic"         # valid options: basic, big, background, thumbAndBackground
+showBreadcrumbs = true
 showViews = false
 showLikes = false
 showTableOfContents = true

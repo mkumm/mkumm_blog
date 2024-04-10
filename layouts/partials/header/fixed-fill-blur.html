@@ -1,13 +1,20 @@
-<div class="fixed inset-x-0 pl-[24px] pr-[24px] z-50 bg-neutral-100 opacity-70">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral-300 dark:bg-neutral-800"></div>
-  <div class="relative max-w-[64rem] ml-auto mr-auto px-6">
-    {{ partial "partials/header/basic.html" . }}
-  </div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px] z-50 bg-neutral-100 opacity-80">
+    <div
+        id="menu-blur"
+        class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral-300 dark:bg-neutral-800"
+    ></div>
+    <div class="relative max-w-[64rem] ml-auto mr-auto px-6">
+        {{ partial "partials/header/basic.html" . }}
+    </div>
 </div>
 <script>
-  window.addEventListener('scroll', function (e) {
-    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    var background_blur = document.getElementById('menu-blur');
-    background_blur.style.opacity = (scroll / 300);
-  });
+    window.addEventListener("scroll", function (e) {
+        var scroll =
+            window.pageYOffset ||
+            document.documentElement.scrollTop ||
+            document.body.scrollTop ||
+            0;
+        var background_blur = document.getElementById("menu-blur");
+        background_blur.style.opacity = scroll / 300;
+    });
 </script>

@@ -25,7 +25,7 @@ links = [
     { twitter = "https://twitter.com/mkumm" },
     { amazon = "https://www.amazon.com/hz/wishlist/ls/1IKGRRNJ7VYW2" },
     { instagram = "https://www.instagram.com/mkumm" },
-    { link = "https://sprytna.dev" },
+    #{ link = "https://sprytna.dev" },
 ]
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
