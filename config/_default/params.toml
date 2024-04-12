@@ -33,7 +33,7 @@ layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill
 showMenu = false
 showCopyright = false
 showThemeAttribution = true
-showAppearanceSwitcher = true
+showAppearanceSwitcher = false
 showScrollToTop = true
 
 [homepage]
@@ -79,7 +79,7 @@ showZenMode = false
 [list]
 showHero = true
 heroStyle = "basic"         # valid options: basic, big, background, thumbAndBackground
-showBreadcrumbs = true
+showBreadcrumbs = false
 showSummary = false
 showViews = false
 showLikes = false
@@ -109,7 +109,7 @@ tag = 'tags'
 [term]
 showHero = true
 heroStyle = "basic"         # valid options: basic, big, background, thumbAndBackground
-showBreadcrumbs = true
+showBreadcrumbs = false
 showViews = false
 showLikes = false
 showTableOfContents = true

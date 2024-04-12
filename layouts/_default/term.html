@@ -11,11 +11,12 @@
 {{- end -}}
 
 {{ $toc := and (.Params.showTableOfContents | default (.Site.Params.term.showTableOfContents | default false)) (in
-.TableOfContents "<ul") }}<header class="p-8 max-w-7xl mx-auto px-16">
+.TableOfContents "<ul") }}<header class="max-w-7xl mx-auto px-16 pt-16">
   {{ if .Params.showBreadcrumbs | default (.Site.Params.term.showBreadcrumbs | default false) }}
-  {{ partial "breadcrumbs.html" . }}
+  {{ partial "breadcrumbs.html" . }} {{ .Title }}
   {{ end }}
-  <h1 class="mt-16 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  <h1 class="mt-16 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Blog Posts by Tag</h1>
+  <p>Showing all posts with the tag: <span class="font-bold">{{ .Title }}</span></p>
   <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
     {{ partial "article-meta/term.html" (dict "context" . "scope" "single") }}
   </div>
