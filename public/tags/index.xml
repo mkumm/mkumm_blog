@@ -1,59 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on mkumm.com</title>
+    <title>mkumm.com</title>
     <link>https://mkumm.com/tags/</link>
-    <description>Recent content in Tags on mkumm.com</description>
+    <description>Recent content on mkumm.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-    <lastBuildDate>Sat, 02 Mar 2024 12:40:00 +0100</lastBuildDate><atom:link href="https://mkumm.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Apr 2024 12:40:00 +0100</lastBuildDate><atom:link href="https://mkumm.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>books</title>
-      <link>https://mkumm.com/tags/books/</link>
-      <pubDate>Sat, 02 Mar 2024 12:40:00 +0100</pubDate>
+      <title>meal</title>
+      <link>https://mkumm.com/tags/meal/</link>
+      <pubDate>Tue, 09 Apr 2024 12:40:00 +0100</pubDate>
       
-      <guid>https://mkumm.com/tags/books/</guid>
+      <guid>https://mkumm.com/tags/meal/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>poland</title>
-      <link>https://mkumm.com/tags/poland/</link>
-      <pubDate>Sat, 02 Mar 2024 12:40:00 +0100</pubDate>
+      <title>recipe</title>
+      <link>https://mkumm.com/tags/recipe/</link>
+      <pubDate>Tue, 09 Apr 2024 12:40:00 +0100</pubDate>
       
-      <guid>https://mkumm.com/tags/poland/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>polish</title>
-      <link>https://mkumm.com/tags/polish/</link>
-      <pubDate>Sat, 02 Mar 2024 12:40:00 +0100</pubDate>
-      
-      <guid>https://mkumm.com/tags/polish/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>technical</title>
-      <link>https://mkumm.com/tags/technical/</link>
-      <pubDate>Sat, 02 Mar 2024 12:40:00 +0100</pubDate>
-      
-      <guid>https://mkumm.com/tags/technical/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>fiction</title>
-      <link>https://mkumm.com/tags/fiction/</link>
-      <pubDate>Sat, 02 Mar 2024 12:26:35 +0100</pubDate>
-      
-      <guid>https://mkumm.com/tags/fiction/</guid>
+      <guid>https://mkumm.com/tags/recipe/</guid>
       <description></description>
       
     </item>

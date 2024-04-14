@@ -2118,6 +2118,11 @@ select {
   background-color:rgba(var(--color-neutral-100), 0.5)
 }
 
+.bg-neutral-200 {
+  --tw-bg-opacity:1;
+  background-color:rgba(var(--color-neutral-200), var(--tw-bg-opacity))
+}
+
 .bg-neutral-300 {
   --tw-bg-opacity:1;
   background-color:rgba(var(--color-neutral-300), var(--tw-bg-opacity))
@@ -2353,6 +2358,11 @@ select {
 .py-\[1px\] {
   padding-top:1px;
   padding-bottom:1px
+}
+
+.py-\[2px\] {
+  padding-top:2px;
+  padding-bottom:2px
 }
 
 .pb-2 {
@@ -2625,8 +2635,8 @@ select {
   opacity:0.6
 }
 
-.opacity-80 {
-  opacity:0.8
+.opacity-90 {
+  opacity:0.9
 }
 
 .mix-blend-normal {

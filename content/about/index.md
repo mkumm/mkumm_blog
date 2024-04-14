@@ -10,35 +10,27 @@ I was born in a suburb of Detroit and I am now living in Krakow, Poland. I work 
 
 ## Current Work
 
-My full time day job lets me work in Elixir for a company that supplies data to sports books; allowing them to offer in-game bet. I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and Surface. I am starting to get more interested in Machine Learning and Site Reliability Engineering as well as continuing to master Elixir/Phoenix.
+My full time day job lets me work in Elixir for a company that supplies data to sports books; allowing them to offer in-game betting. I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and Surface. I am starting to get more interested in Compilers and Site Reliability Engineering as well as continuing to master Elixir/Phoenix and the ecosystem.
 
 ## Previousl Work
 
-My professional career has followed to simultaneous paths. One in technology and the other in business management and leadership. Although this may seem like a strange path, I never saw them as that different.
+My professional career has followed two simultaneous paths. One in technology and the other in business management and leadership and sometimes overlapping.
 
-### Development
+Professionally I have been lucky enough to create in C, PHP, Python, and Elixir. These days I play around in Lua, Rust, OCaml,
+Go, (maybe soon Gleam), and others as well as the technologies supporting the current wave of AI.
 
-### Leadership
-
-Professionally I have been lucky enough to create in C, PHP, Python, and Elixir with most of the web
-technologies that complement the languages. These days I play around in Rust, Haskell, OCaml,
-Go, Gleam, and others as well as the technologies supporting the current wave of AI.
-
-In the past I have had several leadership roles (CTO, Operations Management, IT Director, Development Manager) and have enjoyed
-all my jobs for different reasons but generally I prefer coding.
+In the past I have had several leadership roles as CTO, Operations Management, IT Director, Development Manager.
 
 ## Hobbies and Interests
 
 ### Photography
 
-I an amateur photographer and share some of my photos on [Instagram (@mkumm)](https://www.instagram.com/mkumm/)
-and [Flickr.com (@mkumm)](https://www.flickr.com/photos/mkumm/). My main camera is my portable [Nikon z50](https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/)
-a really excellent camera for price.
+I a (very) amateur photographer and share some of my photos on [Instagram (@mkumm)](https://www.instagram.com/mkumm/)
+and [Flickr.com (@mkumm)](https://www.flickr.com/photos/mkumm/). My main camera is my wonderfully portable [Nikon z50](https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/). I know it falls in the non-professional category of photo hardware, but I am, well a non-professional.
 
 ### Music Creation
 
-I take a stab at some music creation with Ableton and played the violin through my first year of college.
-Here is my latest sample.
+I played violin through my first year of college and then just stopped. I did nothing with music for about 30 years and then I started playing around with Ableton. I have been creating music as find time, here is a short sample of my latest - **One of the Birds**
 
 <figure>
   <figcaption>Listen to One of the Birds:</figcaption>
@@ -48,23 +40,20 @@ Here is my latest sample.
 
 ### Software Development
 
-Code has been with me since an early age and I have never strayed too far away. I spend a lot of my time
-in functional languages and compilers.
+Code has been with me since an early age and I have never strayed too far away. I am lucky that I get to develop software during work hours and then really go deep into compilers (or whatever else) during my non-work hours.
 
 ### Reading
 
 I love reading
-fiction, non-fiction, and technical books. I get all my news from The Economist.
+fiction, non-fiction, and technical books. For current events, The Economist.
 
 ### Craft Beers
 
-I love trying different beers and I get
-especially excited with cask ales.
+I love tasting craft beers even if I my tolerance for drinking is going down. I am not above taking a long trip primarily to taste some new beers.
 
 ### Coffee
 
-I love brewing coffee and always seek out the best local roasters (there are some great
-ones in Krakow).
+I love brewing coffee (maybe even more than drinking it) and I always seek out the best local roasters (there are some great ones in Krakow).
 
 ### Polish Language
 
@@ -72,12 +61,11 @@ I continue to struggle to learn Polish, but I take weekly lessons and study most
 
 ### Cooking
 
-I enjoy cooking
-and find it more relaxing than watching TV.
+I cook the vast majority of our meal. I enjoy it and find it more relaxing than watching TV and stuff like that.
 
 ### Travel
 
-My partner and I do a lot of walking, at home and while traveling.
+Been traveling a little less lately, but have some bigger trips planned later this year.
 
 ### Chess
 
@@ -103,4 +91,9 @@ MacBook air 13 inch travel and "change of scenery" moments.
 
 ### Development Software
 
-[resume](http://resume.com)
+- **Zed**
+- **Adobe Products**
+- **X-Scope**
+- **Postico**
+- **Docker Desktop**
+- **Fantastical**

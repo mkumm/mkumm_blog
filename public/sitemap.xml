@@ -3,56 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://mkumm.com/now/</loc>
+    <lastmod>2024-04-13T04:14:54-08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mkumm.com/posts/</loc>
-    <lastmod>2024-03-02T12:40:00+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mkumm.com/posts/book-algorithms/</loc>
-    <lastmod>2024-03-02T12:40:00+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mkumm.com/posts/hello/</loc>
-    <lastmod>2024-03-02T12:40:00+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mkumm.com/</loc>
-    <lastmod>2024-03-02T12:40:00+01:00</lastmod>
+    <lastmod>2024-04-09T12:40:00+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mkumm.com/tags/</loc>
-    <lastmod>2024-03-02T12:40:00+01:00</lastmod>
+    <lastmod>2024-04-09T12:40:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mkumm.com/</loc>
+    <lastmod>2024-04-09T12:40:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mkumm.com/posts/recipe-spicy-sausage-and-rice/</loc>
+    <lastmod>2024-04-09T12:40:00+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mkumm.com/about/</loc>
     <lastmod>2024-03-02T12:30:00+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mkumm.com/posts/book-cursed-bunny/</loc>
-    <lastmod>2024-03-02T12:26:35+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mkumm.com/posts/book-how-to-calm-your-mind/</loc>
-    <lastmod>2024-03-02T11:57:07+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mkumm.com/now/</loc>
-    <lastmod>2024-02-01T04:14:54-08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
