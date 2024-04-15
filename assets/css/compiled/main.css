@@ -1692,6 +1692,10 @@ select {
   margin-top:0.1rem
 }
 
+.box-border {
+  box-sizing:border-box
+}
+
 .box-content {
   box-sizing:content-box
 }
@@ -1903,6 +1907,26 @@ select {
 
 .max-w-xl {
   max-width:36rem
+}
+
+.max-w-\[40rem\] {
+  max-width:40rem
+}
+
+.max-w-\[50rem\] {
+  max-width:50rem
+}
+
+.max-w-screen-xl {
+  max-width:1280px
+}
+
+.max-w-screen-lg {
+  max-width:1024px
+}
+
+.max-w-screen-md {
+  max-width:853px
 }
 
 .flex-1 {
@@ -2158,6 +2182,11 @@ select {
 
 .border-transparent {
   border-color:transparent
+}
+
+.border-neutral-100 {
+  --tw-border-opacity:1;
+  border-color:rgba(var(--color-neutral-100), var(--tw-border-opacity))
 }
 
 .bg-neutral {
