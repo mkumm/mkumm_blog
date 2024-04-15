@@ -4,6 +4,7 @@ public/
 /assets/jsconfig.json
 hugo_stats.json
 .DS_Store
+**/.DS_Store
 
 # Executable may be added to repository
 hugo.exe
