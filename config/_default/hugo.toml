@@ -11,7 +11,7 @@ languageCode = "en"
 
 enableRobotsTXT = true
 paginate = 12
-summaryLength = 0
+summaryLength = 300
 
 buildDrafts = false
 buildFuture = false
