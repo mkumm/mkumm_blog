@@ -64,16 +64,3 @@ applyFilter = false
 name = 'fragmentrefs'
 type = 'fragments'
 weight = 10
-
-[build]
-duplicateResourceFiles = false
-noJSConfigInAssets = false
-useResourceCacheWhen = 'fallback'
-[build.buildStats]
-disableClasses = false
-disableIDs = false
-disableTags = false
-enable = false
-[[build.cacheBusters]]
-source = '(postcss|tailwind)\.config\.js'
-target = '(css|styles|scss|sass)'
