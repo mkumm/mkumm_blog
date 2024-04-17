@@ -1,11 +1,11 @@
 +++
-title = 'Up and Running With HUGO'
+title = 'Up and Running With Hugo'
 date = 2024-04-15T12:40:00+01:00
 tags = ['go', 'dev', 'blog', 'hugo', 'blowfish']
 draft = false
 +++
 
-This post is mostly about my getting Hugo and Blowfish up and running. Feel free to jump to [Hugo Quickstart](#hugo-quick-start)
+This post is mostly about getting [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) up and running and published to [Fly.io](https://fly.io/). Feel free to jump to [Hugo Quickstart](#hugo-quick-start) to skip the backstory.
 
 ## Backstory
 
@@ -13,73 +13,71 @@ This post is mostly about my getting Hugo and Blowfish up and running. Feel free
 
 I have been using Elixir/Phoenix/Nimble for my blog posts for the last couple of years. It was okay, but I felt I was spending too much time tweaking the code and not enough time creating content. Additionally, I did not find the experience of creating new content pleasant - whatever that means.
 
-Once I realized that I was open to using anything, I started to put together a list of "wants."
+I decided to take a look around and see what was availabel these days. So so many options. I decided to put together a little wishlist.
 
-### New Blog Requirements
+### My Wishlist
 
 I want to...
 
 - use a platform that I didn't have to think about once I set it up.
-- write in markdown.
+- write in [markdown](https://daringfireball.net/projects/markdown/syntax).
 - own my content and maybe cross post to other platforms.
 - use my own domain.
-- have some creative control.
+- have some creative control but start with something sensible.
 - enjoy creating content again (again, whatever that means).
-- make it easier to share some things that might be helpful to others.
-- be open to some different tech.
+- make it easier to quickly be helpful to others.
+- maybe learn some different tech.
 
 ### Considerations
 
-I looked at Ghost, Medium, Squarespace, Dev.to, and several other 'just start posting' platforms. I don't mind spending money for value, and I suggest that most platforms offer enough value for what they are selling, these things just were not valuable to me. I didn't want to automatically collect emails, or monetize my blog. I wasn't looking to build an audience (that I actively monitor).
+I looked at Ghost, Medium, Squarespace, Dev.to, and several other platforms that 'just let me start posting.' What they were selling just wasn't valuable to me. I didn't want to automatically collect emails, or monetize my blog. I wasn't looking to build an audience (that I actively monitor), etc.
 
-I did spend about an hour considering writing my own static site generator (maybe in C) but eventually decided that this project didn't need any yack shaving. I did eventually start looking at static site generators which brought me to the usual players: Gatsby, Jekyll, Hugo and I tried them all.
+I did spend about an hour considering writing my own static site generator (maybe in C) but eventually decided that I didn't want so shave a yack before I started blogging (maybe later). My search led me to static site generators which brought me to the usual players: Gatsby, Jekyll, Hugo and I tried them all.
 
-### HUGO for the win
+### Hugo For the Win!
 
-Hugo was fast. Really fast. To render my sample site with a few posts in development mode, the edits I made were rendered in sub-one-second time. Hugo also had a nice collection of starter templates (I chose Blowfish) and in pretty short time I had a working prototype of what my blog would be. Super happy with HUGO.
+Hugo was fast. I am really, really fast. Rendering was in the sub-second range with a few posts. Hugo also had a nice collection of starter templates (I chose Blowfish) and in pretty short time I had a working prototype of what my blog would be. Super happy with Hugo and Blofish.
 
-The rest of this post is sharing my setup, configuration, and hosting story.
+The rest of this post is sharing some things I learned while setting up and publishing this blog.
 
 ## Hugo Quick Start
 
 The following is how I set up and configured Hugo with Blowfish.
 
 ### My starting environment
-I am using a Mac (Apple Silicon) with git, node, and homebrew. I am pretty sure I had GO installed already.
+I am using a Mac (Apple Silicon) with homebrew, git, node, and GO. If you don't have these installed yet, you will need to do that. Follow the install directions - probably start with [homebrew](https://brew.sh/).
 
 ### Install Hugo and Blowfish
 
-There are a lot of options when choosing how to install HUGO and Blowfish, the following worked well for quick setup and being able to maintain the installs.
+There are a lot of options when choosing how to install Hugo and Blowfish, the following worked well for my quick setup and I did not run into any problems later in the process.
 
-```bash
+```console
 $ brew install hugo
 ```
 
-Navigate to where ever you want to setup your blog on your local system and run the following commands. Replace `<blog-name>` with the name of your blog. I used `mkumm-blog`.
+Navigate to whereever you want to setup your blog on your local system and run the following commands. Replace `blog-name` with the name of your blog. I used `mkumm-blog`.
 
-
-
-```bash
+```console
 # from ~/Dev
-$ hugo new site <blog-name>
+$ hugo new site blog-name
 
-$ cd <blog-name>
+$ cd blog-name
 ```
 
-```bash
-# from ~/Dev/<blog-name>
+```console
+# from ~/Dev/blog-name
 $ git init
 
 $ git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
 ```
 
-I ignored all of the Blowfish install tools and any alternative methods of installation. Using the submodule puts you in a good place later on for updates, etc.
+I ignored all of the Blowfish install tools and any alternative methods of installation. Using the submodule option puts you in a good place later on.
 
 ### Add Your Basic Config
 
-Now there is one more thing to do before we can see our local development site. We need to copy our `<blog-name>/themes/blowfish/config` directory to the root of our project and make one small edit to one of the files.
+Now there is one more thing to do before we can see our local development site. We need to copy our `blog-name/themes/blowfish/config` directory to the root of our project and make one small edit to one of the files.
 
-```bash
+```console
 ├── archetypes
 ├── assets
 ├── content
@@ -95,11 +93,11 @@ Now there is one more thing to do before we can see our local development site. 
     		└── _default
 ```
 
-```bash
+```console
 $ cp -r themes/blowfish/config .
 ```
 
-```bash
+```console
 ├── archetypes
 ├── assets
 ├── content
@@ -114,10 +112,10 @@ $ cp -r themes/blowfish/config .
 └── themes
 ```
 
-Now for that one small edit. Open up `<blog-name>/config/_default.hugo.toml` and uncomment line 5 so the start of the file looks like this.
+Now for that one small edit. Open up `blog-name/config/_default.hugo.toml` and uncomment line 5 so the start of the file looks like this.
 
 ```toml
-# editing <blog-name>/config/_default/hugo.toml
+# editing blog-name/config/_default/hugo.toml
 
 # -- Site Configuration --
 # Refer to the theme docs for more details about each of these parameters.
@@ -133,10 +131,10 @@ defaultContentLanguage = "en"
 
 ### Launch Your Local Server
 
-After saving `<blog-name>/config/_default/hugo.toml` you can run the following...
+After saving `blog-name/config/_default/hugo.toml` you can run the following...
 
-```bash
-# from ~/Dev/<blog-name>/
+```console
+# from ~/Dev/blog-name/
 
 $ hugo server
 ```
@@ -151,7 +149,7 @@ By adding the Blowfish git submodule to our system, we ended up with a sub-direc
 
 When Hugo is looking for the files it needs, it will first look in _your_ files, which is pretty much everything but your themes directory. If it can't find the file it needs, it will then lookup that file in your configured theme. You can think of your theme as basically your default source for all files.
 
-When we ran the command `hugo server` we asked hugo to launch a basic webserver, dynamically generate the static files it needs and then server them on port 1313. As you might imagine, there are a lot of options available - well documented on the [HUGO Documentation Site - hugo server](https://gohugo.io/commands/hugo_server/). **Spoilers** To actaully build your site for production, the command is even shorter `hugo`.
+When we ran the command `hugo server` we asked Hugo to launch a basic webserver, dynamically generate the static files it needs and then server them on port 1313. As you might imagine, there are a lot of options available - well documented on the [Hugo Documentation Site - Hugo server](https://gohugo.io/commands/hugo_server/). **Spoilers** To actaully build your site for production, the command is even shorter `hugo`.
 
 And that's all it takes to set up a bare bones Hugo Server with a custom  themes. Let's create our first blog post.
 
@@ -161,9 +159,9 @@ In the documentation you will see there are many options for how you can set up 
 
 ### Hello World
 
-Let's use Hugo's built in generators to give us a markdown file with helpful frontmatter. That is just a fancy way of asking Hugo to set up a new post for us.
+Let's use Hugo's built in generators to give us a markdown file with helpful front matter. That is just a fancy way of asking Hugo to set up a new post for us.
 
-```terminal
+```console
 $ hugo new content posts/hello_world/index.md
 ```
 
@@ -179,7 +177,7 @@ draft = true
 +++
 ```
 
-The text between the two `+++`s is our _frontmatter_ which is not directly visible in our post. Let's edit this file so we can see our post in a browser. By default, Hugo will not show posts with `draft = true`
+The text between the two `+++`s is our _front matter_ which is not directly visible in our post. Let's edit this file so we can see our post in a browser. By default, Hugo will not show posts with `draft = true`
 
 ```text
 # content/posts/hello-world/index.md
@@ -195,7 +193,7 @@ draft = true
 We are here!
 ```
 
-We edited our _frontmatter_ to give us a human looking title and changed draft from `true` to `false` as well as adding the obligatory "Hello World!" text. Once we save the file we can see our post added to our list of posts (which of course just has one at the moment): [localhost:1313/posts/](http://localhost:1313/posts/)
+We edited our _front matter_ to give us a human looking title and changed draft from `true` to `false` as well as adding the obligatory "Hello World!" text. Once we save the file we can see our post added to our list of posts (which of course just has one at the moment): [localhost:1313/posts/](http://localhost:1313/posts/)
 
 ![image2](image2.png)
 
@@ -255,8 +253,8 @@ So far we have updated some configuration files, added a theme, and temporarily 
 
 ### Build
 
-```bash
-hugo
+```console
+$ hugo
 ```
 
 Yep, that's it. Our `public/` directory is now populated with everything you will need (and at the moment more) to deploy your site publicly.
@@ -269,10 +267,10 @@ Hugo's `hugo deploy` with some minimal configuration can be used to deploy to al
 
 Create a new file named `Docker`
 
-```bash
-# from <blog-name>
+```console
+# from blog-name
 
-touch Docker
+$ touch Docker
 ```
 
 Edit Docker file so the entire file looks like this
@@ -288,15 +286,15 @@ You can now run this docker file locally but feel free to move right to [Time to
 
 Assuming you have docker on your local system.
 
-```bash
-# from ~/Dev/<blog-name>/
-docker build -t myblog .
+```console
+# from ~/Dev/blog-name/
+$ docker build -t myblog .
 ```
 
 Once built, you can launch your blog with
 
-```bash
-docker run -d -p 8043:80 myblog
+```console
+$ docker run -d -p 8043:80 myblog
 ```
 
 Because the server we chose uses port 8043, we just needed to map all of our localhost (port 80) requests to the docker server's port 8043.
@@ -315,7 +313,7 @@ Once you have installed `flyctl` and created your account, deployment is 2 steps
 
 We are going to let flyctl create this for us.
 
-```terminal
+```console
 $ flyctl launch
 ```
 
@@ -364,7 +362,7 @@ We need to update our internal port from "8080" to "8043" so it looks like this
 
 No we can run
 
-```terminal
+```console
 $ flyctl deploy
 ```
 
@@ -387,3 +385,43 @@ Then scroll to the bottom of the page and click "Settings", this will give you t
 And after a confirmation step, your app has been deleted.
 
 ## Next Steps
+
+### Configuration
+
+Get to know your `config/_default` files learn how much you can modify on your site before you add any design elements
+
+[https://blowfish.page/docs/getting-started/](https://blowfish.page/docs/getting-started/)
+
+### Add Some Style
+
+Get some inspiration from the [Blowfish Samples page](https://blowfish.page/examples/) and then start playing around with different layouts [https://blowfish.page/docs/homepage-layout/](https://blowfish.page/docs/homepage-layout/)
+
+### Configure TailwindCss to Reload on Change
+
+Sadly you don't start with access to everything that TailwindCSS has to offer. Basically if a Tailwind code is currently being used in your site, you won't be able to see the changes you want until you "rebuild your css". To do this during development you will need to do 2 things.
+
+1. Install the Tailwind compiler
+
+```console
+$ cd themes/blowfish
+# and then from themes/blowfish run
+$ npm install
+```
+
+Running this command will give you access to tailwind's tools which you will need to rebuild your css.
+
+```console
+# Get back to the root of your site
+$ cd ../..
+# and then run
+$ ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w
+```
+This second command will start a watcher on your site and will update your CSS whenever you make a change that requires it.
+
+### Add General Pages (Contact, etc)
+
+Take a look at the Blowfish [content-examples](https://blowfish.page/docs/content-examples/) to learn how to add pages that are not blog posts to your site.
+
+## Feedback
+
+I hope you found this post helpful. Feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) with any feedback or questions.
