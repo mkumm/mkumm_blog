@@ -244,9 +244,69 @@ We edited our `config/_default/menus.en.toml` file to start to build out our nav
 Now is a good time to start exploring the sample blowfish site in `themes/blowfish/exampleSite` for inspiration on what is easily possible. By the way that example site is already up and running - it's the same one used on
 [Blowfish Website](https://blowfish.page/)
 
-I am hoping you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover some helpful examples of updating Tailwind on changes and how to push your blog on [fly.io](https://fly.io) (other examples are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/))
+I am hoping you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site and how to push your blog on [fly.io](https://fly.io) (other examples are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
 
-## Development and Deployment
+## Build and Deployment
+
+So far we have updated some configuration files, added a theme, and temporarily rendered our content to view on our local browser. The next step will create a "permanent for now" version of our static site, which is all we really need to share with the world. To build our site we have to enter the following.
+
+### Build
+
+```bash
+hugo
+```
+
+Yep, that's it. Our `public/` directory is now populated with everything you will need (and at the moment more) to deploy your site publicly.
+
+### Prep for Deployment
+
+Hugo's `hugo deploy` with some minimal configuration can be used to deploy to all the regular players and it is a great option. What is not well documented is setting up a more generic deployment using Docker and a provider like [fly.io](https://fly.io) - which is the provider I have been using for the last year or so.
+
+**Set up a Docker File**
+
+Create a new file named `Docker`
+
+```bash
+# from <blog-name>
+
+touch Docker
+```
+
+Edit Docker file so the entire file looks like this
+
+```txt
+FROM pierrezemb/gostatic
+COPY ./public/ /srv/http/
+```
+
+**Just for fun**
+
+You can now run this docker file locally but feel free to move right to [Time to Fly.io](#time-to-fly.io)
+
+Assuming you have docker on your local system.
+
+```bash
+# from ~/Dev/<blog-name>/
+docker build -t myblog .
+```
+
+Once built, you can launch your blog with
+
+```bash
+docker run -d -p 8043:80 myblog
+```
+
+Because the server we chose uses port 8043, we just needed to map all of our localhost (port 80) requests to the docker server's port 8043.
+
+Now you can go to your [localhost](http://localhost) and see your full static site as it will be deployed.
+
+### Time to Fly.io
+
+**Set up Fly.io cli tools**
+
+If you don't have an account yet, go to [fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on/install-flyctl/) to set up `flyctl` and follow the first two steps. (I have no affiliation and receive no incentives from Fly.io).
+
+Once you have installed `flyctl` and created your account, deployment is 2 steps away.
 
 
 
@@ -255,6 +315,4 @@ I am hoping you have enough information to start developing your blog on Hugo/Bl
 
 
 
-### Updating TailwindCSS
-
-### Publish to Fly.io
+## Some Additional Notes
