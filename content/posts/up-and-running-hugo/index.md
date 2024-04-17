@@ -77,7 +77,7 @@ I ignored all of the Blowfish install tools and any alternative methods of insta
 
 ### Add Your Basic Config
 
-Now there is one more thing to do before we can see our local development site. We need to copy our `<blog-name>/themes/blowfish/config/_default` directory to the root of our project and make one small edit.
+Now there is one more thing to do before we can see our local development site. We need to copy our `<blog-name>/themes/blowfish/config` directory to the root of our project and make one small edit to one of the files.
 
 ```bash
 ├── archetypes
@@ -91,15 +91,19 @@ Now there is one more thing to do before we can see our local development site. 
 ├── static
 └── themes
     └── blowfish
-    	└── config
-    		└── _default # this dir
+    	└── config # copy this directory
+    		└── _default
+```
+
+```bash
+$ cp -r themes/blowfish/config .
 ```
 
 ```bash
 ├── archetypes
 ├── assets
 ├── content
-└── config # you just added this
+└── config # directory just added
     └── _default
 ├── data
 ├── hugo.toml
@@ -145,25 +149,25 @@ and then take a look at [localhost:1313](http://localhost:1313) in your browser.
 
 By adding the Blowfish git submodule to our system, we ended up with a sub-directory called `themes/blowfish`. Do not edit files directly in the `themes/blowfish/` directory.
 
-When we copied over the `config/` directory and made that small edit, we basically told HUGO to look in the `themes/blowfish` directory **IF** HUGO can't find the file or directory it needs to build our site. In many cases we will want to copy files from our theme into our main system.
+When Hugo is looking for the files it needs, it will first look in _your_ files, which is pretty much everything but your themes directory. If it can't find the file it needs, it will then lookup that file in your configured theme. You can think of your theme as basically your default source for all files.
 
 When we ran the command `hugo server` we asked hugo to launch a basic webserver, dynamically generate the static files it needs and then server them on port 1313. As you might imagine, there are a lot of options available - well documented on the [HUGO Documentation Site - hugo server](https://gohugo.io/commands/hugo_server/). **Spoilers** To actaully build your site for production, the command is even shorter `hugo`.
 
-And that's all it takes to set up a bare bones Hugo Server with a custom themes. In the next section I will go over setting up our first blog post.
+And that's all it takes to set up a bare bones Hugo Server with a custom  themes. Let's create our first blog post.
 
 ## First Blog Post
 
-In the documentation you will see there are many options for how you can set up your files for blog posts.
+In the documentation you will see there are many options for how you can set up your files for blog posts. To get started, let's keep it simple and leave enough flexibility for later.
 
 ### Hello World
 
-Let's use Hugo's built in generators to give us a markdown file with helpful frontmatter.
+Let's use Hugo's built in generators to give us a markdown file with helpful frontmatter. That is just a fancy way of asking Hugo to set up a new post for us.
 
-```bash
-hugo new content posts/hello_world/index.md
+```terminal
+$ hugo new content posts/hello_world/index.md
 ```
 
-This will create a new directory `content/posts/hello-world/index.md` and a markdown file which we will use to create our first blog post.
+This will create a new directory `content/posts/hello-world/index.md` with a markdown file which we will use to create our first blog post.
 
 ```text
 # content/posts/hello-world/index.md
@@ -175,7 +179,7 @@ draft = true
 +++
 ```
 
-The text between the 2 `+++` is our frontmatter which is not directly visible in our post. Let's edit this file a little bit so we have something to see.
+The text between the two `+++`s is our _frontmatter_ which is not directly visible in our post. Let's edit this file so we can see our post in a browser. By default, Hugo will not show posts with `draft = true`
 
 ```text
 # content/posts/hello-world/index.md
@@ -191,18 +195,15 @@ draft = true
 We are here!
 ```
 
-We changed
-`draft = true` to `draft = false` and
-`title = 'Hello_world'` to `title = 'Hello World' and
-added some obligatory "Hello World!" text.
-
-We can view the lists of our posts: [localhost:1313/posts/](http://localhost:1313/posts/)
+We edited our _frontmatter_ to give us a human looking title and changed draft from `true` to `false` as well as adding the obligatory "Hello World!" text. Once we save the file we can see our post added to our list of posts (which of course just has one at the moment): [localhost:1313/posts/](http://localhost:1313/posts/)
 
 ![image2](image2.png)
 
-And then click into your post at [localhost:1313/posts/hello_world](http://localhost:1313/posts/hello_world)
+You can view the entire post by clicking on the listing. [localhost:1313/posts/hello_world](http://localhost:1313/posts/hello_world)
 
 ![image3](image3.png)
+
+Looks great, but if we are starting from the home page, we will never find our posts. Let's fix that.
 
 ### Add "Blog" To Site Menu
 
@@ -233,7 +234,9 @@ Let's make one last edit so we have a link on our homepage to our posts. Uncomme
 .
 ```
 
-And now you should see a link to "Blog" on your [homepage!](http://localhost:1313)
+We are telling Hugo to add "Blog" to our navigation and have it point to our "posts" content folder. When you save the above file click into your homepage, you should see the following:
+
+ [homepage!](http://localhost:1313)
 
 ### Thing We Did
 
@@ -308,11 +311,79 @@ If you don't have an account yet, go to [fly.io/docs/hands-on/install-flyctl/](h
 
 Once you have installed `flyctl` and created your account, deployment is 2 steps away.
 
+**Create your fly.toml file**
 
+We are going to let flyctl create this for us.
 
+```terminal
+$ flyctl launch
+```
 
+You will be asked two questions, just answer 'N' in both cases
+_Do you want to 'tweak' these settings?_. **N**
+_Do you want to add dockerignore...?_. **N**
 
+Fly will continue to deploy your site, but it won't actually work yet. Let's update that `fly.toml` that was just created for us.
 
+```toml
+1 # fly.toml app configuration file generated for blog-name on 2024-04-17T11:43:28+02:00
+┆   2 #
+┆   3 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+┆   4 #
+┆   5
+┆   6 app = 'blog-name'
+┆   7 primary_region = 'waw'
+┆   8
+┆   9 [build]
+┆  10
+┆  11 [http_service]
+┆  12 ▏ internal_port = 8080
+┆  13 ▏ force_https = true
+┆  14 ▏ auto_stop_machines = true
+┆  15 ▏ auto_start_machines = true
+┆  16 ▏ min_machines_running = 0
+┆  17 ▏ processes = ['app']
+┆  18
+┆  19 [[vm]]
+┆  20 ▏ memory = '1gb'
+┆  21 ▏ cpu_kind = 'shared'
+┆  22 ▏ cpus = 1
+```
 
+We need to update our internal port from "8080" to "8043" so it looks like this
 
-## Some Additional Notes
+```toml
+┆  11 [http_service]
+┆  12 ▏ internal_port = 8043
+┆  13 ▏ force_https = true
+┆  14 ▏ auto_stop_machines = true
+┆  15 ▏ auto_start_machines = true
+┆  16 ▏ min_machines_running = 0
+┆  17 ▏ processes = ['app']
+```
+
+No we can run
+
+```terminal
+$ flyctl deploy
+```
+
+and after some behind the scenes magic, follow the link it provides to view your newly published site! 🎉
+
+![image4](image4.png)
+
+### Destroy App
+
+Fly.io let's you use up to $5 of resources for free each month so our new blog probably won't cost us anything, but there probably is no reason to keep this running.
+
+Go to your [Fly.io Dashboard](https://fly.io/dashboard) and click on your new App. If this is your first time using Fly, it will be the only App listed.
+
+![image6](image6.png)
+
+Then scroll to the bottom of the page and click "Settings", this will give you the option to "Delete app"
+
+![image7](image7.png)
+
+And after a confirmation step, your app has been deleted.
+
+## Next Steps
