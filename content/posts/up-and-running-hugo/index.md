@@ -6,7 +6,7 @@ draft = false
 +++
 
 {{<lead>}}
-This post is mostly about getting [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) up and running and published to [Fly.io](https://fly.io/). Feel free to jump to [Hugo Quickstart](#hugo-quick-start) to skip the backstory.
+This post is mostly about using [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) to get your new blog up and running and published to [Fly.io](https://fly.io/). Feel free to jump to [Hugo Quickstart](#hugo-quick-start) to skip the backstory.
 {{</lead>}}
 
 ## Backstory
@@ -15,7 +15,7 @@ This post is mostly about getting [Hugo](https://gohugo.io/) and [Blowfish](http
 
 I have been using Elixir/Phoenix/Nimble for my blog posts for the last couple of years. It was okay, but I felt I was spending too much time tweaking the code and not enough time creating content. Additionally, I did not find the experience of creating new content pleasant - whatever that means.
 
-I decided to take a look around and see what was availabel these days. So so many options. I decided to put together a little wishlist.
+I decided to take a look around and see what was available these days. So so many options. I decided to put together a little wishlist.
 
 ### My Wishlist
 
@@ -27,18 +27,17 @@ I want to...
 - use my own domain.
 - have some creative control but start with something sensible.
 - enjoy creating content again (again, whatever that means).
-- make it easier to quickly be helpful to others.
 - maybe learn some different tech.
 
 ### Considerations
 
 I looked at Ghost, Medium, Squarespace, Dev.to, and several other platforms that 'just let me start posting.' What they were selling just wasn't valuable to me. I didn't want to automatically collect emails, or monetize my blog. I wasn't looking to build an audience (that I actively monitor), etc.
 
-I did spend about an hour considering writing my own static site generator (maybe in C) but eventually decided that I didn't want so shave a yack before I started blogging (maybe later). My search led me to static site generators which brought me to the usual players: Gatsby, Jekyll, Hugo and I tried them all.
+I did spend about an hour considering writing my own static site generator (maybe in C) but eventually decided that I didn't want to shave a yack before I started blogging (maybe later). My search led me to static site generators which brought me to the usual players: Gatsby, Jekyll, Hugo - I tried them all.
 
 ### Hugo For the Win!
 
-Hugo was fast. I am really, really fast. Rendering was in the sub-second range with a few posts. Hugo also had a nice collection of starter templates (I chose Blowfish) and in pretty short time I had a working prototype of what my blog would be. Super happy with Hugo and Blofish.
+Hugo was fast. I mean really, really fast. Rendering was in the sub-second range with a few posts. Hugo also had a nice collection of starter templates and themes (I chose Blowfish) and in pretty short time I had a working prototype of what my blog would be. Super happy with Hugo and Blowfish.
 
 The rest of this post is sharing some things I learned while setting up and publishing this blog.
 
@@ -46,21 +45,21 @@ The rest of this post is sharing some things I learned while setting up and publ
 
 The following is how I set up and configured Hugo with Blowfish.
 
-### Prerequisite
-I am using a Mac (Apple Silicon) with homebrew, git, node, Docker (optional), and GO already installed. If you don't have these installed yet, you will need to do that. Follow the install directions - probably start with [homebrew](https://brew.sh/). Being comfortable with the terminal and a text editor (VIM, VScode, Zed, for example) is probably also a requirement.
+### Prerequisites
+I am using a Mac (Apple Silicon) with homebrew, git, node, Docker (optional), and GO already installed. If you don't have these installed yet, you will need to do that. Follow the install directions and probably start with [homebrew](https://brew.sh/). Being comfortable with the terminal and a text editor (VIM, VScode, Zed, for example) is probably also a requirement.
 
 ### Install Hugo and Blowfish
 
-There are a lot of options when choosing how to install Hugo and Blowfish, the following is easy and I did not run into any problems later in the process.
+There are a lot of options when choosing how to install Hugo and Blowfish, the following method is easy and I did not run into any problems later in the process.
 
 ```console
 $ brew install hugo
 ```
 
-Navigate to whereever you want to setup your blog on your local system and run the following commands. Replace `blog-name` with the name of your blog. I used `mkumm-blog` from my `Dev` directory.
+Navigate to wherever you want to setup your blog on your local system and run the following commands. Replace `blog-name` with the name of your blog. I used `mkumm-blog` from my `Dev` directory.
 
 ```console
-# this will be the root of your project
+# This will be the root of your blog
 $ hugo new site blog-name
 
 $ cd blog-name
@@ -79,6 +78,7 @@ I ignored all of the Blowfish install tools and any alternative methods of insta
 
 We need to copy our `blog-name/themes/blowfish/config` directory to the root of our project and make one small edit to `hugo.toml`.
 
+
 ```console
 blog-name
 ├── archetypes
@@ -95,6 +95,7 @@ blog-name
     	└── config # <- copy this directory
     		└── _default
 ```
+
 
 ```console
 $ cp -r themes/blowfish/config .
@@ -116,7 +117,7 @@ blog-name
 └── themes
 ```
 
-In your favorite text editor, uncomment the thems entry (line 5) of `blog-name/config/_default.hugo.toml`.
+In your favorite text editor, uncomment the themes entry (line 5) of `blog-name/config/_default.hugo.toml`.
 
 The start of `hugo.toml` should now look like this.
 
@@ -145,7 +146,7 @@ After saving `blog-name/config/_default/hugo.toml` run the following:
 $ hugo server
 ```
 
-and then take a look at [localhost:1313](http://localhost:1313) in your browser.
+Now take a look at [localhost:1313](http://localhost:1313) in your browser.
 
 ![hugo start page](image1.png)
 
@@ -155,13 +156,15 @@ By adding the Blowfish git submodule to our system, we ended up with a sub-direc
 
 When Hugo is looking for a file it needs, it will first look in _your_ files, which is pretty much everything but your themes directory. If Hugo can't find the file it needs, it will then search for that file in your configured theme files. This is what we did when we edited hugo.toml.
 
-When we ran the command `hugo server` we asked Hugo to launch a basic webserver suitable for development and dynamically generate the static files needed to serve your blog on port 1313. As you might imagine, there are a lot of options available - well documented on the [Hugo Documentation Site - Hugo server](https://gohugo.io/commands/hugo_server/). **Spoilers** To actaully build your site for production, the command is even shorter `hugo`.
+When we ran the command `hugo server` we asked Hugo to launch a basic web server suitable for development and dynamically generate the static files needed to serve your blog on port 1313. As you might imagine, there are a lot of options available - well documented on the [Hugo Documentation Site - Hugo server](https://gohugo.io/commands/hugo_server/).
 
-And that's all it takes to set up a bare bones Hugo Server with a custom  themes. Let's create our first blog post.
+**Spoilers** To actually build your site for production, the command is even shorter `hugo`.
+
+And that's all it takes to set up a bare bones Hugo Server with a custom  theme. Let's create our first blog post.
 
 ## First Blog Post
 
-In the documentation you will see there are many options for how you can set up your files for your blog. To get started, let's keep it as simple as possible and leave deep customisations for later.
+In the documentation you will see there are many options for how you can set up your files for your blog. To get started, let's keep it as simple as possible and leave customizations for later.
 
 ### Hello World
 
@@ -244,16 +247,16 @@ We are telling Hugo to add "Blog" to our navigation and have it point to our "po
 
 ### What We Did
 
-We used the Hugo generator to create a directory for our blog post and edited the index.md to create our post. Technically we don't need to create a directory for every post, but with a directory we can add images, video, whatever to the directory and we can reference those files conveniently with a little markdown `![image1](image1.png)`. Notice the lack of `../static/to/image/`, your images (or music, videos, etc) are just there. You also have the option of storing your images globally in your assets directory.
+We used the Hugo Generator to create a directory for our blog post and edited the `index.md` file to create our post. Technically we don't need to create a directory for every post, but with a directory we can add images, video, whatever to the directory and we can reference those files conveniently with a little markdown `![image1](image1.png)`. Notice the lack of `../static/to/image/`, your images (or music, videos, etc) are just there. You also have the option of storing your images globally in your assets directory if you need the same resource in multiple places on your site.
 
 We edited our `config/_default/menus.en.toml` file to start to build out our navigation. If you explore that file (and other toml files) you see start to see how much control we have just by editing configuration files.
 
 Now is a good time to start exploring the sample blowfish site in `themes/blowfish/exampleSite` for inspiration on what is possible out of the box. By the way that example site is already up and running - it's the same one used on
 [Blowfish Website](https://blowfish.page/)
 
-I hope you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site and how to push your blog on [fly.io](https://fly.io) (other examples/hosting solutions are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
+At this point you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site pubish it on [fly.io](https://fly.io) (other examples/hosting solutions are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
 
-## Build and Deployment
+## Build and Deploy
 
 So far we have updated some configuration files, added a theme, and temporarily rendered our content to view on our local browser. The next step will create a "permanent for now" version of our static site.
 
@@ -265,11 +268,11 @@ Let's build our static site.
 $ hugo
 ```
 
-Yep, that's it. Our `public/` directory is now populated with everything you will need (and at the moment more than you need) to deploy your site publicly.
+Yep, that's it. Our `public/` directory is now populated with everything you will need (and at the moment more than you need) to deploy your site.
 
 ### Prep for Deployment
 
-Hugo's `hugo deploy` with some minimal configuration can be used to deploy to all the regular players and it is a great option. What is not well documented is setting up a more generic deployment using Docker and a provider like [fly.io](https://fly.io) - which is the provider I have been using for the last year or so.
+Hugo's `hugo deploy` (with some minimal configuration) can be used to deploy to all the regular players and it is a great option. What is not well documented is setting up a more generic deployment using Docker and a provider like [fly.io](https://fly.io) - which is the provider I have been using for the last year or so.
 
 **Set up a Docker File**
 
@@ -290,7 +293,7 @@ COPY ./public/ /srv/http/
 
 **Just for fun**
 
-This next step is optional, to skip go to [Time to Fly.io](#time-to-flyio).
+This next step is optional, feel free to skip and go to [Time to Fly.io](#time-to-flyio).
 
 Assuming you have docker on your local system.
 
@@ -305,21 +308,21 @@ Once built, you can launch your blog with
 $ docker run -d -p 8043:80 myblog
 ```
 
-Because the server we chose uses port 8043, we just needed to map all of our localhost (port 80) requests to the docker server's port 8043.
+Because the server we chose uses port 8043, we just need to redirect requests to the right ports.
 
-Now you can go to your [localhost](http://localhost) and see your full static site as it will be deployed.
+Now you can go to your [localhost](http://localhost) and see your full static site as it will be deployed on the web.
 
 ### Time to Fly.io
 
 **Set up Fly.io cli tools**
 
-If you don't have an account yet, go to [fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on/install-flyctl/) to set up `flyctl` and follow the first two steps. (I have no affiliation and receive no incentives from Fly.io).
+If you don't have an account yet, go to [fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on/install-flyctl/) to set up `flyctl` and follow the first two steps from their website. (I have no affiliation and receive no incentives from Fly.io).
 
-Once you have installed `flyctl` and created your account, deployment is 2 steps away.
+Once you have created your Fly.io account and installed `flyctl` deployment is just a couple steps.
 
 **Create your fly.toml file**
 
-We are going to let flyctl create this for us.
+Fly.io will need some information from us to be able to configure their resources to host our blog. We are going to let flyctl create the initial version of this for us. Run the following command.
 
 ```console
 $ flyctl launch
@@ -329,58 +332,58 @@ You will be asked two questions, just answer 'N' in both cases
 - _Do you want to 'tweak' these settings?_. **N**
 - _Do you want to add dockerignore...?_. **N**
 
-Fly will continue to deploy your site, but it won't actually work yet. Let's fix that by updating the `fly.toml` file that was just created for us.
+Fly will continue to launch your site, but it won't actually work yet. Let's fix that by updating the `fly.toml` file that was just created for us.
 
 ```toml
-1 # fly.toml app configuration file generated for blog-name on 2024-04-17T11:43:28+02:00
-┆   2 #
-┆   3 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-┆   4 #
-┆   5
-┆   6 app = 'blog-name'
-┆   7 primary_region = 'waw'
-┆   8
-┆   9 [build]
-┆  10
-┆  11 [http_service]
-┆  12 ▏ internal_port = 8080
-┆  13 ▏ force_https = true
-┆  14 ▏ auto_stop_machines = true
-┆  15 ▏ auto_start_machines = true
-┆  16 ▏ min_machines_running = 0
-┆  17 ▏ processes = ['app']
-┆  18
-┆  19 [[vm]]
-┆  20 ▏ memory = '1gb'
-┆  21 ▏ cpu_kind = 'shared'
-┆  22 ▏ cpus = 1
+1  # fly.toml app configuration file generated for blog-name on 2024-04-17T11:43:28+02:00
+2  #
+3  # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+4  #
+5
+6  app = 'blog-name'
+7  primary_region = 'waw'
+8
+9  [build]
+10
+11 [http_service]
+12  internal_port = 8080
+13  force_https = true
+14  auto_stop_machines = true
+15  auto_start_machines = true
+16  min_machines_running = 0
+17  processes = ['app']
+18
+19 [[vm]]
+20  memory = '1gb'
+21  cpu_kind = 'shared'
+22  cpus = 1
 ```
 
-We need to update our internal port on line 12 from "8080" to "8043" so it looks like this. Your other settings will be different from mine.
+We need to update our internal port on line 12 from "8080" to "8043" so it looks like this the text below. The other settings will be different from the sample above.
 
 ```toml
-┆  11 [http_service]
-┆  12 ▏ internal_port = 8043
-┆  13 ▏ force_https = true
-┆  14 ▏ auto_stop_machines = true
-┆  15 ▏ auto_start_machines = true
-┆  16 ▏ min_machines_running = 0
-┆  17 ▏ processes = ['app']
+11 [http_service]
+12  internal_port = 8043
+13  force_https = true
+14  auto_stop_machines = true
+15  auto_start_machines = true
+16  min_machines_running = 0
+17  processes = ['app']
 ```
 
-No we can run
+No we can run...
 
 ```console
 $ flyctl deploy
 ```
 
-and after waiting for some behind the scenes magic... follow the link it provides to view your newly-published public-to-the-world blog! 🎉
+After waiting for some behind the scenes magic... follow the link it provides to view your newly-published public-to-the-world blog! 🎉
 
 ![image4](image4.png)
 
 ### Destroy App
 
-Fly.io let's you use up to $5 of resources for free each month so our new blog won't cost us anything if we let it run for a while, but there probably is no reason to keep this running... so...
+Fly.io let's you use up to $5 (might be $10) of resources for free each month so this blog won't cost us anything if we let it run for a while, but there is probably no reason to keep this running... so...
 
 Go to your [Fly.io Dashboard](https://fly.io/dashboard) and click on your new App. If this is your first time using Fly, it will be the only App listed.
 
@@ -390,13 +393,13 @@ Then scroll to the bottom of the page and click "Settings", this will give you t
 
 ![image7](image7.png)
 
-And after a confirmation step, your app has been deleted and you won't see any charges.
+Click "Delete app" and after a confirmation step, your app has been deleted and you won't see any charges.
 
 ## Next Steps
 
 ### Configuration
 
-Get to know your `config/_default` files. Learn how much you can modify on your site before you add any design elements. Like social links, blog name, layout options, etc. etc.
+Get to know your `config/_default` files. Experiment and see how much you can modify on your site before you add any new design elements. Social links, blog name, layout options, etc. etc. are all managed through your configuration files.
 
 [https://blowfish.page/docs/getting-started/](https://blowfish.page/docs/getting-started/)
 
@@ -406,7 +409,7 @@ Get some inspiration from the [Blowfish Samples page](https://blowfish.page/exam
 
 ### Configure TailwindCss to Reload on Change
 
-Sadly you don't start with access to everything that TailwindCSS has to offer. Basically if a Tailwind code is currently being used in your site, you won't be able to see the changes you want until you "rebuild your css". To do this during development you will need to do 2 things.
+Sadly you don't start with access to everything that TailwindCSS has to offer. Basically if a Tailwind element is not currently being used in your site, you won't have access to that element until you "rebuild your css". To do this frequently you will need to do 2 things.
 
 1. Install the Tailwind compiler
 
@@ -428,7 +431,7 @@ This second command will start a watcher on your site and will update your CSS w
 
 ### Add General Pages (Contact, etc)
 
-Take a look at the Blowfish [content-examples](https://blowfish.page/docs/content-examples/) to learn how to add pages that are not blog posts to your site.
+Take a look at the Blowfish [content-examples](https://blowfish.page/docs/content-examples/) to learn how to add pages that are not blog posts (like Contact, A Photo Gallery, etc.) to your site.
 
 ## Feedback
 
