@@ -5,7 +5,9 @@ tags = ['go', 'dev', 'blog', 'hugo', 'blowfish']
 draft = false
 +++
 
+{{<lead>}}
 This post is mostly about getting [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) up and running and published to [Fly.io](https://fly.io/). Feel free to jump to [Hugo Quickstart](#hugo-quick-start) to skip the backstory.
+{{</lead>}}
 
 ## Backstory
 
@@ -44,28 +46,28 @@ The rest of this post is sharing some things I learned while setting up and publ
 
 The following is how I set up and configured Hugo with Blowfish.
 
-### My starting environment
-I am using a Mac (Apple Silicon) with homebrew, git, node, and GO. If you don't have these installed yet, you will need to do that. Follow the install directions - probably start with [homebrew](https://brew.sh/).
+### Prerequisite
+I am using a Mac (Apple Silicon) with homebrew, git, node, Docker (optional), and GO already installed. If you don't have these installed yet, you will need to do that. Follow the install directions - probably start with [homebrew](https://brew.sh/). Being comfortable with the terminal and a text editor (VIM, VScode, Zed, for example) is probably also a requirement.
 
 ### Install Hugo and Blowfish
 
-There are a lot of options when choosing how to install Hugo and Blowfish, the following worked well for my quick setup and I did not run into any problems later in the process.
+There are a lot of options when choosing how to install Hugo and Blowfish, the following is easy and I did not run into any problems later in the process.
 
 ```console
 $ brew install hugo
 ```
 
-Navigate to whereever you want to setup your blog on your local system and run the following commands. Replace `blog-name` with the name of your blog. I used `mkumm-blog`.
+Navigate to whereever you want to setup your blog on your local system and run the following commands. Replace `blog-name` with the name of your blog. I used `mkumm-blog` from my `Dev` directory.
 
 ```console
-# from ~/Dev
+# this will be the root of your project
 $ hugo new site blog-name
 
 $ cd blog-name
 ```
 
 ```console
-# from ~/Dev/blog-name
+# from blog-name/
 $ git init
 
 $ git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
@@ -75,9 +77,10 @@ I ignored all of the Blowfish install tools and any alternative methods of insta
 
 ### Add Your Basic Config
 
-Now there is one more thing to do before we can see our local development site. We need to copy our `blog-name/themes/blowfish/config` directory to the root of our project and make one small edit to one of the files.
+We need to copy our `blog-name/themes/blowfish/config` directory to the root of our project and make one small edit to `hugo.toml`.
 
 ```console
+blog-name
 ├── archetypes
 ├── assets
 ├── content
@@ -89,7 +92,7 @@ Now there is one more thing to do before we can see our local development site. 
 ├── static
 └── themes
     └── blowfish
-    	└── config # copy this directory
+    	└── config # <- copy this directory
     		└── _default
 ```
 
@@ -98,10 +101,11 @@ $ cp -r themes/blowfish/config .
 ```
 
 ```console
+blog-name
 ├── archetypes
 ├── assets
 ├── content
-└── config # directory just added
+└── config # the directory you just added
     └── _default
 ├── data
 ├── hugo.toml
@@ -112,7 +116,9 @@ $ cp -r themes/blowfish/config .
 └── themes
 ```
 
-Now for that one small edit. Open up `blog-name/config/_default.hugo.toml` and uncomment line 5 so the start of the file looks like this.
+In your favorite text editor, uncomment the thems entry (line 5) of `blog-name/config/_default.hugo.toml`.
+
+The start of `hugo.toml` should now look like this.
 
 ```toml
 # editing blog-name/config/_default/hugo.toml
@@ -131,10 +137,10 @@ defaultContentLanguage = "en"
 
 ### Launch Your Local Server
 
-After saving `blog-name/config/_default/hugo.toml` you can run the following...
+After saving `blog-name/config/_default/hugo.toml` run the following:
 
 ```console
-# from ~/Dev/blog-name/
+# from blog-name/
 
 $ hugo server
 ```
@@ -143,19 +149,19 @@ and then take a look at [localhost:1313](http://localhost:1313) in your browser.
 
 ![hugo start page](image1.png)
 
-### Thing We Did
+### What We Did
 
-By adding the Blowfish git submodule to our system, we ended up with a sub-directory called `themes/blowfish`. Do not edit files directly in the `themes/blowfish/` directory.
+By adding the Blowfish git submodule to our system, we ended up with a sub-directory called `themes/blowfish`. Consider this a **read only** directory. You do not want to edit files directly in the `themes/blowfish/` directory.
 
-When Hugo is looking for the files it needs, it will first look in _your_ files, which is pretty much everything but your themes directory. If it can't find the file it needs, it will then lookup that file in your configured theme. You can think of your theme as basically your default source for all files.
+When Hugo is looking for a file it needs, it will first look in _your_ files, which is pretty much everything but your themes directory. If Hugo can't find the file it needs, it will then search for that file in your configured theme files. This is what we did when we edited hugo.toml.
 
-When we ran the command `hugo server` we asked Hugo to launch a basic webserver, dynamically generate the static files it needs and then server them on port 1313. As you might imagine, there are a lot of options available - well documented on the [Hugo Documentation Site - Hugo server](https://gohugo.io/commands/hugo_server/). **Spoilers** To actaully build your site for production, the command is even shorter `hugo`.
+When we ran the command `hugo server` we asked Hugo to launch a basic webserver suitable for development and dynamically generate the static files needed to serve your blog on port 1313. As you might imagine, there are a lot of options available - well documented on the [Hugo Documentation Site - Hugo server](https://gohugo.io/commands/hugo_server/). **Spoilers** To actaully build your site for production, the command is even shorter `hugo`.
 
 And that's all it takes to set up a bare bones Hugo Server with a custom  themes. Let's create our first blog post.
 
 ## First Blog Post
 
-In the documentation you will see there are many options for how you can set up your files for blog posts. To get started, let's keep it simple and leave enough flexibility for later.
+In the documentation you will see there are many options for how you can set up your files for your blog. To get started, let's keep it as simple as possible and leave deep customisations for later.
 
 ### Hello World
 
@@ -185,7 +191,7 @@ The text between the two `+++`s is our _front matter_ which is not directly visi
 +++
 title = 'Hello World'
 date = 2024-04-15T22:20:02+02:00
-draft = true
+draft = false
 +++
 
 ## Hello World!
@@ -232,24 +238,26 @@ Let's make one last edit so we have a link on our homepage to our posts. Uncomme
 .
 ```
 
-We are telling Hugo to add "Blog" to our navigation and have it point to our "posts" content folder. When you save the above file click into your homepage, you should see the following:
+We are telling Hugo to add "Blog" to our navigation and have it point to our "posts" content folder. When you save the above file, make sure your server is running (you can start it by running `$ hugo server`) and click into your local [homepage](http://localhost:1313) to see that a navigation link to your posts are now visible from the home page.
 
- [homepage!](http://localhost:1313)
 
-### Thing We Did
 
-We used the Hugo generator to create a directory for our blog post and add an index.md which is the markdown file we edit to write our post. Technically we don't need to create a directory for every post, but with a directory we can add images, video, whatever to the directory and we can reference those files conveniently with a little markdown `![image1](image1.png)`.
+### What We Did
 
-We edited our `config/_default/menus.en.toml` file to start to build out our navigation. If you explore that file (and other toml files) you see start to see how much control we have just by editing configuration.
+We used the Hugo generator to create a directory for our blog post and edited the index.md to create our post. Technically we don't need to create a directory for every post, but with a directory we can add images, video, whatever to the directory and we can reference those files conveniently with a little markdown `![image1](image1.png)`. Notice the lack of `../static/to/image/`, your images (or music, videos, etc) are just there. You also have the option of storing your images globally in your assets directory.
 
-Now is a good time to start exploring the sample blowfish site in `themes/blowfish/exampleSite` for inspiration on what is easily possible. By the way that example site is already up and running - it's the same one used on
+We edited our `config/_default/menus.en.toml` file to start to build out our navigation. If you explore that file (and other toml files) you see start to see how much control we have just by editing configuration files.
+
+Now is a good time to start exploring the sample blowfish site in `themes/blowfish/exampleSite` for inspiration on what is possible out of the box. By the way that example site is already up and running - it's the same one used on
 [Blowfish Website](https://blowfish.page/)
 
-I am hoping you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site and how to push your blog on [fly.io](https://fly.io) (other examples are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
+I hope you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site and how to push your blog on [fly.io](https://fly.io) (other examples/hosting solutions are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
 
 ## Build and Deployment
 
-So far we have updated some configuration files, added a theme, and temporarily rendered our content to view on our local browser. The next step will create a "permanent for now" version of our static site, which is all we really need to share with the world. To build our site we have to enter the following.
+So far we have updated some configuration files, added a theme, and temporarily rendered our content to view on our local browser. The next step will create a "permanent for now" version of our static site.
+
+Let's build our static site.
 
 ### Build
 
@@ -257,7 +265,7 @@ So far we have updated some configuration files, added a theme, and temporarily 
 $ hugo
 ```
 
-Yep, that's it. Our `public/` directory is now populated with everything you will need (and at the moment more) to deploy your site publicly.
+Yep, that's it. Our `public/` directory is now populated with everything you will need (and at the moment more than you need) to deploy your site publicly.
 
 ### Prep for Deployment
 
@@ -265,15 +273,15 @@ Hugo's `hugo deploy` with some minimal configuration can be used to deploy to al
 
 **Set up a Docker File**
 
-Create a new file named `Docker`
+Create a new file named `Dockerfile`
 
 ```console
 # from blog-name
 
-$ touch Docker
+$ touch Dockerfile
 ```
 
-Edit Docker file so the entire file looks like this
+Edit `Dockerfile` so the entire file looks like this
 
 ```txt
 FROM pierrezemb/gostatic
@@ -282,7 +290,7 @@ COPY ./public/ /srv/http/
 
 **Just for fun**
 
-You can now run this docker file locally but feel free to move right to [Time to Fly.io](#time-to-fly.io)
+This next step is optional, to skip go to [Time to Fly.io](#time-to-flyio).
 
 Assuming you have docker on your local system.
 
@@ -318,10 +326,10 @@ $ flyctl launch
 ```
 
 You will be asked two questions, just answer 'N' in both cases
-_Do you want to 'tweak' these settings?_. **N**
-_Do you want to add dockerignore...?_. **N**
+- _Do you want to 'tweak' these settings?_. **N**
+- _Do you want to add dockerignore...?_. **N**
 
-Fly will continue to deploy your site, but it won't actually work yet. Let's update that `fly.toml` that was just created for us.
+Fly will continue to deploy your site, but it won't actually work yet. Let's fix that by updating the `fly.toml` file that was just created for us.
 
 ```toml
 1 # fly.toml app configuration file generated for blog-name on 2024-04-17T11:43:28+02:00
@@ -348,7 +356,7 @@ Fly will continue to deploy your site, but it won't actually work yet. Let's upd
 ┆  22 ▏ cpus = 1
 ```
 
-We need to update our internal port from "8080" to "8043" so it looks like this
+We need to update our internal port on line 12 from "8080" to "8043" so it looks like this. Your other settings will be different from mine.
 
 ```toml
 ┆  11 [http_service]
@@ -366,13 +374,13 @@ No we can run
 $ flyctl deploy
 ```
 
-and after some behind the scenes magic, follow the link it provides to view your newly published site! 🎉
+and after waiting for some behind the scenes magic... follow the link it provides to view your newly-published public-to-the-world blog! 🎉
 
 ![image4](image4.png)
 
 ### Destroy App
 
-Fly.io let's you use up to $5 of resources for free each month so our new blog probably won't cost us anything, but there probably is no reason to keep this running.
+Fly.io let's you use up to $5 of resources for free each month so our new blog won't cost us anything if we let it run for a while, but there probably is no reason to keep this running... so...
 
 Go to your [Fly.io Dashboard](https://fly.io/dashboard) and click on your new App. If this is your first time using Fly, it will be the only App listed.
 
@@ -382,13 +390,13 @@ Then scroll to the bottom of the page and click "Settings", this will give you t
 
 ![image7](image7.png)
 
-And after a confirmation step, your app has been deleted.
+And after a confirmation step, your app has been deleted and you won't see any charges.
 
 ## Next Steps
 
 ### Configuration
 
-Get to know your `config/_default` files learn how much you can modify on your site before you add any design elements
+Get to know your `config/_default` files. Learn how much you can modify on your site before you add any design elements. Like social links, blog name, layout options, etc. etc.
 
 [https://blowfish.page/docs/getting-started/](https://blowfish.page/docs/getting-started/)
 
@@ -416,7 +424,7 @@ $ cd ../..
 # and then run
 $ ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w
 ```
-This second command will start a watcher on your site and will update your CSS whenever you make a change that requires it.
+This second command will start a watcher on your site and will update your CSS whenever you make a change to the code that requires new css elements.
 
 ### Add General Pages (Contact, etc)
 
