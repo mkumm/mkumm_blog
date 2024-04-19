@@ -1375,6 +1375,10 @@ select {
   pointer-events:auto
 }
 
+.visible {
+  visibility:visible
+}
+
 .invisible {
   visibility:hidden
 }
@@ -1501,6 +1505,11 @@ select {
 .mx-1 {
   margin-left:0.25rem;
   margin-right:0.25rem
+}
+
+.mx-5 {
+  margin-left:1.25rem;
+  margin-right:1.25rem
 }
 
 .mx-\[15\%\] {
@@ -1694,10 +1703,6 @@ select {
 
 .mt-\[0\.1rem\] {
   margin-top:0.1rem
-}
-
-.box-border {
-  box-sizing:border-box
 }
 
 .box-content {
@@ -1909,28 +1914,12 @@ select {
   max-width:65ch
 }
 
-.max-w-xl {
-  max-width:36rem
-}
-
-.max-w-\[40rem\] {
-  max-width:40rem
-}
-
-.max-w-\[50rem\] {
-  max-width:50rem
-}
-
-.max-w-screen-xl {
-  max-width:1280px
-}
-
 .max-w-screen-lg {
   max-width:1024px
 }
 
-.max-w-screen-md {
-  max-width:853px
+.max-w-xl {
+  max-width:36rem
 }
 
 .flex-1 {
@@ -2188,11 +2177,6 @@ select {
   border-color:transparent
 }
 
-.border-neutral-100 {
-  --tw-border-opacity:1;
-  border-color:rgba(var(--color-neutral-100), var(--tw-border-opacity))
-}
-
 .bg-neutral {
   --tw-bg-opacity:1;
   background-color:rgba(var(--color-neutral), var(--tw-bg-opacity))
@@ -2257,6 +2241,11 @@ select {
 
 .bg-transparent {
   background-color:transparent
+}
+
+.bg-neutral-400 {
+  --tw-bg-opacity:1;
+  background-color:rgba(var(--color-neutral-400), var(--tw-bg-opacity))
 }
 
 .bg-gradient-to-b {
@@ -2450,6 +2439,11 @@ select {
 .py-\[1px\] {
   padding-top:1px;
   padding-bottom:1px
+}
+
+.px-5 {
+  padding-left:1.25rem;
+  padding-right:1.25rem
 }
 
 .pb-2 {
@@ -2810,6 +2804,18 @@ select {
 
 .\!\[clip\:rect\(0\2c 0\2c 0\2c 0\)\] {
   clip:rect(0,0,0,0) !important
+}
+
+.\[localhost\:1313\/posts\/\] {
+  localhost:1313/posts/
+}
+
+.\[localhost\:1313\/posts\/hello_world\] {
+  localhost:1313/posts/hello world
+}
+
+.\[localhost\:1313\] {
+  localhost:1313
 }
 
 body a,
@@ -4839,6 +4845,11 @@ pre {
     padding-bottom:1.5rem
   }
 
+  .sm\:px-0 {
+    padding-left:0px;
+    padding-right:0px
+  }
+
   .sm\:text-lg {
     font-size:1.125rem;
     line-height:1.75rem
@@ -5057,6 +5068,11 @@ pre {
 
   .xl\:grid-cols-4 {
     grid-template-columns:repeat(4, minmax(0, 1fr))
+  }
+
+  .xl\:px-0 {
+    padding-left:0px;
+    padding-right:0px
   }
 }
 

@@ -12,8 +12,8 @@
     {{ partial "partials/hero/basic.html" . }}
     {{ end }}
     {{ end }}
-<div class="max-w-screen-lg mx-auto">
-    <header id="single_header" class="mt-5 ">
+<div class="max-w-screen-lg mx-auto px-5 xl:px-0">
+    <header id="single_header" class="mt-5">
         {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
         {{ end }}
