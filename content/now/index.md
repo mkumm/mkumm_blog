@@ -38,10 +38,11 @@ I am working through [I Am A Strange Loop](https://www.amazon.com/Am-Strange-Loo
 
 ### Compilers
 
-I was intimidated to start "The Dragon Book" [Compilers: Principles, Techniques, & Tools](https://www.amazon.com/Compilers-Principles-Techniques-Alfred-Aho-ebook/dp/B009TGD06W) and LOVE it. It is hard, but so incredibly well written. It is a joy to read, even if takes some concentrated effort to work through.
+I was intimidated to start "The Dragon Book" [Compilers: Principles, Techniques, & Tools](https://www.amazon.com/Compilers-Principles-Techniques-Alfred-Aho-ebook/dp/B009TGD06W) but now that I have, I LOVE it. It is hard, but so incredibly well written. It is a joy to read, even if takes some additional concentrated effort to work through.
 
-### Misc Others
+### Books I am reading now
 
 - [Read Write Own](https://www.amazon.com/Read-Write-Own-Building-Internet-ebook/dp/B0C8FNFV38). I'm a believer
 - [Cursed Bunny](https://www.amazon.com/Cursed-Bunny-Bora-Chung-ebook/dp/B0CLL1MSS1) Uncomfortable fiction, but it's fun to read and the stories stay with you.
 - [Hidden Potential](https://www.amazon.com/Hidden-Potential-Science-Achieving-Greater-ebook/dp/B0C5LN1BCM) My first Adam Grant book. Enjoying it, but at 25% of the way in I am still waiting for the grand reveal.
+- [Engineering Elixir Applications](https://pragprog.com/titles/beamops/engineering-elixir-applications/) I am only 3 chapters in, but wow this is a fun book! Exceedingly easy to code along with the author. I am garbage at DevOps, this book may help!
