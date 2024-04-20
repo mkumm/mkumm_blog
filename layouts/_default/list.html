@@ -30,7 +30,7 @@
     {{ $jsPage = $jsPage | resources.Minify | resources.Fingerprint "sha512" }}
     <script type="text/javascript" src="{{ $jsPage.RelPermalink }}" integrity="{{ $jsPage.Data.Integrity }}"></script>
     </header>
-    <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-5xl px-6">
         <section class="{{ if $toc -}}
       mt-12
     {{- else -}}

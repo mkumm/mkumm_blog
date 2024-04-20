@@ -37,7 +37,7 @@ showAppearanceSwitcher = false
 showScrollToTop = false
 
 [homepage]
-layout = "hero"                 # valid options: page, profile, hero, card, background, custom
+layout = "background"                 # valid options: page, profile, hero, card, background, custom
 homepageImage = "img/cover.png" # used in: hero, and card
 showRecent = true
 showRecentItems = 3
@@ -80,7 +80,7 @@ showZenMode = false
 showHero = true
 heroStyle = "basic"         # valid options: basic, big, background, thumbAndBackground
 showBreadcrumbs = false
-showSummary = false
+showSummary = true
 showViews = false
 showLikes = false
 showTableOfContents = true

@@ -5,11 +5,10 @@ tags = ['recipe', 'food']
 draft = false
 +++
 
-## About
-
-This is my version from watching [Gordon Ramsay prepare this dish on YouTube](https://www.youtube.com/watch?v=FP6E3JtmsCE).
-
-I have made this dish several times, and each time the taste has been different. Try experimenting with the levels of spice and quantity of wine (or none at all).
+{{<lead>}}
+A great dish for experimenting, try changing both the sausage type and spice level for endless variety.
+The original version of this recipe is from watching [Gordon Ramsay prepare this dish on YouTube](https://www.youtube.com/watch?v=FP6E3JtmsCE).
+{{</lead>}}
 
 ## Ingredients
 
@@ -21,8 +20,8 @@ I have made this dish several times, and each time the taste has been different.
 - 1/3 cup of dry white wine
 - 1 1/2 cups of white basmati rice (washed)
 - 3 cups of chicken stock
-- 1 green opnion
-- 1/4 cup of parslay
+- 1 green onion
+- 1/4 cup of parsley
 - Salt, Pepper, Hungarian Smoked Paprika
 
 ## Directions
@@ -36,7 +35,7 @@ I have made this dish several times, and each time the taste has been different.
 
 ### Cooking
 
-- Slowely bring up the temperature of your pan.
+- Slowly bring up the temperature of your pan.
 - Add enough olive oil to coat the bottom.
 - Add onions and cook on low temperature for about 5 minutes. Salt as desired.
 - Add red pepper, cook for a few minutes.
@@ -46,10 +45,10 @@ I have made this dish several times, and each time the taste has been different.
   - Cook look enough to render out some of the fat.
 - Add Smoked Paprika and cook for about a minute
 - Add rice and cook for about a minute.
-- Deglaze the pan with the white wine.
+- De glaze the pan with the white wine.
 - Add the stock and bring to boil.
 - Once boiling, bring the temperature down to a simmer.
-- Let simmer for about 15 minutes with the top off. Stiff occaisonally.
+- Let simmer for about 15 minutes with the top off. Stiff occasionally.
 - Rice should taste mostly done (if not, cook an additional 5 minutes with the top on)
 - Once rice is done, add parslay and green onion and mix.
 
