@@ -11,7 +11,7 @@
 {{ if .Site.Params.list.showCards }}
 {{ $articleImageClasses = delimit (slice $articleImageClasses "") " " }}
 {{ else }}
-{{ $articleImageClasses = delimit (slice $articleImageClasses "thumbnailshadow md:mr-7") " " }}
+{{ $articleImageClasses = delimit (slice $articleImageClasses "md:mr-7") " " }}
 {{ end }}
 
 {{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
@@ -31,7 +31,7 @@
 {{ with .Params.externalUrl }}
 <a class="{{ $articleClasses }}" href="{{ . }}" target="_blank" rel="external">
   {{ else }}
-  <a class="{{ $articleClasses }} bg-neutral-100 rounded-b-lg lg:rounded-r-lg border border-neutral-200" href="{{ .RelPermalink }}">
+  <a class="{{ $articleClasses }} bg-neutral-100 rounded-b-lg lg:rounded-r-lg shadow-sm" href="{{ .RelPermalink }}">
     {{ end }}
     {{- with $.Params.images -}}
     {{- range first 6 . }}
