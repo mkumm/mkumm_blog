@@ -43,11 +43,11 @@
                     {{ end }}
                     </div>
                     <div>
-                    <h1 class="mb-2 text-2xl font-extrabold text-neutral-200">
+                    <h1 class="mb-0 text-lg sm:text-2xl sm:mb-0 font-extrabold text-neutral-200">
                         {{ .Site.Author.name | default .Site.Title }}
                     </h1>
                     {{ with .Site.Author.headline }}
-                    <h2 class="mt-0 mb-0 text-xl text-neutral-300">
+                    <h2 class="mt-0 mb-0 text-sm sm:text-xl text-neutral-300">
                         {{ . | markdownify | emojify }}
                     </h2>
                     {{ end }}

@@ -1700,10 +1700,6 @@ select {
   margin-top:0.1rem
 }
 
-.mt-24 {
-  margin-top:6rem
-}
-
 .box-content {
   box-sizing:content-box
 }
@@ -2197,6 +2193,11 @@ select {
   border-color:transparent
 }
 
+.border-neutral-500 {
+  --tw-border-opacity:1;
+  border-color:rgba(var(--color-neutral-500), var(--tw-border-opacity))
+}
+
 .bg-neutral {
   --tw-bg-opacity:1;
   background-color:rgba(var(--color-neutral), var(--tw-bg-opacity))
@@ -2261,6 +2262,11 @@ select {
 
 .bg-transparent {
   background-color:transparent
+}
+
+.bg-neutral-500 {
+  --tw-bg-opacity:1;
+  background-color:rgba(var(--color-neutral-500), var(--tw-bg-opacity))
 }
 
 .bg-gradient-to-b {
@@ -2364,6 +2370,10 @@ select {
 
 .p-8 {
   padding:2rem
+}
+
+.p-3 {
+  padding:0.75rem
 }
 
 .px-0 {
@@ -2498,6 +2508,10 @@ select {
   padding-right:24px
 }
 
+.pt-12 {
+  padding-top:3rem
+}
+
 .pt-16 {
   padding-top:4rem
 }
@@ -2516,14 +2530,6 @@ select {
 
 .pt-8 {
   padding-top:2rem
-}
-
-.pt-24 {
-  padding-top:6rem
-}
-
-.pt-12 {
-  padding-top:3rem
 }
 
 .text-left {
@@ -4833,6 +4839,10 @@ pre {
     margin-top:4rem
   }
 
+  .sm\:mb-2 {
+    margin-bottom:0.5rem
+  }
+
   .sm\:w-1\/2 {
     width:50%
   }
@@ -4880,6 +4890,16 @@ pre {
 
   .sm\:text-lg {
     font-size:1.125rem;
+    line-height:1.75rem
+  }
+
+  .sm\:text-2xl {
+    font-size:1.5rem;
+    line-height:2rem
+  }
+
+  .sm\:text-xl {
+    font-size:1.25rem;
     line-height:1.75rem
   }
 }
@@ -5054,6 +5074,11 @@ pre {
     gap:6rem
   }
 
+  .lg\:rounded-r-lg {
+    border-top-right-radius:0.5rem;
+    border-bottom-right-radius:0.5rem
+  }
+
   .lg\:p-\[12vh\] {
     padding:12vh
   }
@@ -5087,6 +5112,16 @@ pre {
     padding-top:2rem;
     padding-bottom:2rem
   }
+
+  .lg\:text-2xl {
+    font-size:1.5rem;
+    line-height:2rem
+  }
+
+  .lg\:text-lg {
+    font-size:1.125rem;
+    line-height:1.75rem
+  }
 }
 
 @media (min-width: 1280px) {
@@ -5098,9 +5133,19 @@ pre {
     grid-template-columns:repeat(4, minmax(0, 1fr))
   }
 
+  .xl\:rounded-r-lg {
+    border-top-right-radius:0.5rem;
+    border-bottom-right-radius:0.5rem
+  }
+
   .xl\:px-0 {
     padding-left:0px;
     padding-right:0px
+  }
+
+  .xl\:text-lg {
+    font-size:1.125rem;
+    line-height:1.75rem
   }
 }
 
