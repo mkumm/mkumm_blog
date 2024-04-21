@@ -27,23 +27,23 @@
                     </div>
                     {{ end }}
                 </div>
-                <div class="relative px-4 py-4 sm:px-4 sm:py-6 lg:py-8 lg:px-8 flex flex-col items-center justify-center text-center">
+
+                <div class="relative mt-8 mb-12 flex px-4 py-4 sm:px-4 sm:py-6 lg:py-8 lg:px-8 max-w-5xl mx-auto">
+                    <div class="center px-3">
                     {{ with .Site.Author.image }}
                         {{ $authorImage := "" }}
-                        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-                            {{ $authorImage = resources.GetRemote . }}
-                        {{ else }}
                             {{ $authorImage = resources.Get . }}
-                        {{ end }}
                         {{ if $authorImage }}
                             {{ if not $disableImageOptimization }}
                                 {{ $authorImage = $authorImage.Fill "288x288" }}
                             {{ end }}
-                            <img class="rounded-full h-36 w-36 border-4" width="144" height="144"
+                            <img class="rounded-full h-24 w-24 border-2 mt-0 p-1 mx-auto" width="144" height="144"
                                 alt="{{ $.Site.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                         {{ end }}
                     {{ end }}
-                    <h1 class="mb-2 text-4xl font-extrabold text-neutral-200">
+                    </div>
+                    <div>
+                    <h1 class="mb-2 text-2xl font-extrabold text-neutral-200">
                         {{ .Site.Author.name | default .Site.Title }}
                     </h1>
                     {{ with .Site.Author.headline }}
@@ -64,12 +64,13 @@
                         </div>
                         {{ end }}
                     </div>
+                    </div>
                     <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
                 </div>
             </div>
         </div>
     </div>
 </article>
-<section class="max-w-7xl mx-auto px-16">
+<section class="max-w-5xl mx-auto px-6">
     {{ partial "recent-articles/main.html" . }}
 </section>
