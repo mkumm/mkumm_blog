@@ -28,7 +28,7 @@
                     {{ end }}
                 </div>
 
-                <div class="relative mt-8 mb-12 flex px-4 py-4 sm:px-4 sm:py-6 lg:py-8 lg:px-8 max-w-5xl mx-auto">
+                <div class="relative mt-3 flex px-4 py-4 sm:px-4 sm:py-6 lg:py-8 lg:px-8 max-w-5xl mx-auto">
                     <div class="center px-3">
                     {{ with .Site.Author.image }}
                         {{ $authorImage := "" }}
@@ -37,11 +37,12 @@
                             {{ if not $disableImageOptimization }}
                                 {{ $authorImage = $authorImage.Fill "288x288" }}
                             {{ end }}
-                            <img class="rounded-full h-24 w-24 border-2 mt-0 p-1 mx-auto" width="144" height="144"
+                            <img class="rounded-2xl h-24 w-24 border-2 mt-0 mx-auto" width="144" height="144"
                                 alt="{{ $.Site.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                         {{ end }}
                     {{ end }}
                     </div>
+
                     <div>
                     <h1 class="mb-0 text-lg sm:text-2xl sm:mb-0 font-extrabold text-neutral-200">
                         {{ .Site.Author.name | default .Site.Title }}
