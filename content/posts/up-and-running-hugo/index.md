@@ -6,51 +6,46 @@ draft = false
 +++
 
 {{<lead>}}
-This post is mostly about using [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) to get your new blog up and running and published to [Fly.io](https://fly.io/). Feel free to jump to [Hugo Quickstart](#hugo-quick-start) to skip the backstory.
+As an advocate for content ownership, I believe we can use major platforms effectively to amplify our voice while maintaining control - To support this, I've crafted a straightforward "up and running" guide designed for individuals with basic technical skills.
 {{</lead>}}
+
+This post is mostly about setting up [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) deployed to [Fly.io](https://fly.io/). Feel free to jump to the [Hugo Quickstart](#hugo-quick-start) portion and skip the backstory.
 
 ## Backstory
 
-### Motivation
+### Why Hugo?
 
-I have been using Elixir/Phoenix/Nimble for my blog posts for the last couple of years. It was okay, but I felt I was spending too much time tweaking the code and not enough time creating content. Additionally, I did not find the experience of creating new content pleasant - whatever that means.
-
-I decided to take a look around and see what was available these days. So so many options. I decided to put together a little wishlist.
-
-### My Wishlist
-
-I want to...
+_I want to..._
 
 - use a platform that I didn't have to think about once I set it up.
 - write in [markdown](https://daringfireball.net/projects/markdown/syntax).
-- own my content and maybe cross post to other platforms.
-- use my own domain.
-- have some creative control but start with something sensible.
-- enjoy creating content again (again, whatever that means).
-- maybe learn some different tech.
+- own my content and cross post to other platforms.
+- use my own domain name.
+- have creative control but start with something sensible.
 
 ### Considerations
 
-I looked at Ghost, Medium, Squarespace, Dev.to, and several other platforms that 'just let me start posting.' What they were selling just wasn't valuable to me. I didn't want to automatically collect emails, or monetize my blog. I wasn't looking to build an audience (that I actively monitor), etc.
+I looked at Ghost, Medium, Squarespace, Dev.to, and several other platforms that 'just let me start posting.' None of these granted me the freedom to quickly move to a different platform if they decide to change pricing or add policies that I don't like.
 
-I did spend about an hour considering writing my own static site generator (maybe in C) but eventually decided that I didn't want to shave a yack before I started blogging (maybe later). My search led me to static site generators which brought me to the usual players: Gatsby, Jekyll, Hugo - I tried them all.
+I did spend about an hour considering writing my own blogging software (maybe in C) but eventually decided that I didn't want to [shave a yack](https://en.wiktionary.org/wiki/yak_shaving) before I started writing blog posts (maybe later). My search led me to [static site generators](https://en.wikipedia.org/wiki/Static_site_generator) which brought me to the usual players: [Gatsby](https://www.gatsbyjs.com/), [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/) and others - I feel like I tried them all.
 
 ### Hugo For the Win!
 
-Hugo was fast. I mean really, really fast. Rendering was in the sub-second range with a few posts. Hugo also had a nice collection of starter templates and themes (I chose Blowfish) and in pretty short time I had a working prototype of what my blog would be. Super happy with Hugo and Blowfish.
-
-The rest of this post is sharing some things I learned while setting up and publishing this blog.
+My first impression using Hugo was that it was fast. I mean really, really fast. Much faster then working in my usual web stack (Elixir/Phoenix). Hugo also comes with a nice collection of starter templates and themes (I chose Blowfish). In pretty short time I had a working prototype. I am super happy with Hugo and Blowfish, but even if I change my mind later my content is all plain-text [markdown](https://www.markdownguide.org/basic-syntax/) so I can pretty much just move it to a different platform.
 
 ## Hugo Quick Start
 
-The following is how I set up and configured Hugo with Blowfish.
+The following is a step by step guide for setting up and configuring Hugo with Blowfish.
 
-### Prerequisites
-I am using a Mac (Apple Silicon) with homebrew, git, node, Docker (optional), and GO already installed. If you don't have these installed yet, you will need to do that. Follow the install directions and probably start with [homebrew](https://brew.sh/). Being comfortable with the terminal and a text editor (VIM, VScode, Zed, for example) is probably also a requirement.
+### Prerequisites and Assumptions
+
+Generally I assume you are using a Mac (or Unix-like operating system) with [homebrew](https://brew.sh/) already installed (or you are comfortable installing packages in an alternate way). If you are on a PC, you are on your own to modify some of the instructions for your platform.
+
+The instructions below also assume you have [git](https://git-scm.com/), [node](https://nodejs.org/en), and [GO](https://go.dev/) already installed and optionally [Docker](https://www.docker.com/). If you don't have these installed yet, you will need to do that before moving on. You should also know basic terminal commands and be comfortable with a text editor like [VIM/NVIM](https://neovim.io/), [VScode](https://code.visualstudio.com/), or my favorite [Zed](https://zed.dev/).
 
 ### Install Hugo and Blowfish
 
-There are a lot of options when choosing how to install Hugo and Blowfish, the following method is easy and I did not run into any problems later in the process.
+There are a lot of options when choosing how to install Hugo and Blowfish, the following method is the easiest and fastest and I did not run into any problems later in the process.
 
 ```console
 $ brew install hugo
@@ -243,8 +238,6 @@ Let's make one last edit so we have a link on our homepage to our posts. Uncomme
 
 We are telling Hugo to add "Blog" to our navigation and have it point to our "posts" content folder. When you save the above file, make sure your server is running (you can start it by running `$ hugo server`) and click into your local [homepage](http://localhost:1313) to see that a navigation link to your posts are now visible from the home page.
 
-
-
 ### What We Did
 
 We used the Hugo Generator to create a directory for our blog post and edited the `index.md` file to create our post. Technically we don't need to create a directory for every post, but with a directory we can add images, video, whatever to the directory and we can reference those files conveniently with a little markdown `![image1](image1.png)`. Notice the lack of `../static/to/image/`, your images (or music, videos, etc) are just there. You also have the option of storing your images globally in your assets directory if you need the same resource in multiple places on your site.
@@ -254,7 +247,7 @@ We edited our `config/_default/menus.en.toml` file to start to build out our nav
 Now is a good time to start exploring the sample blowfish site in `themes/blowfish/exampleSite` for inspiration on what is possible out of the box. By the way that example site is already up and running - it's the same one used on
 [Blowfish Website](https://blowfish.page/)
 
-At this point you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site pubish it on [fly.io](https://fly.io) (other examples/hosting solutions are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
+At this point you have enough information to start developing your blog on Hugo/Blowfish. The next section will cover building your static site and publishing it on [fly.io](https://fly.io) (other examples/hosting solutions are well documented on the [Hugo site](https://gohugo.io/hosting-and-deployment/)).
 
 ## Build and Deploy
 
@@ -432,6 +425,33 @@ This second command will start a watcher on your site and will update your CSS w
 ### Add General Pages (Contact, etc)
 
 Take a look at the Blowfish [content-examples](https://blowfish.page/docs/content-examples/) to learn how to add pages that are not blog posts (like Contact, A Photo Gallery, etc.) to your site.
+
+### Careful between development and production
+
+When you run `hugo server` the files in `public/` will be generated based on your development environment. For example your internal links will point to your localhost, not your online website. Your `robots.txt` file, your instructions to search engines, will be configured to disallow access to your site so google will not include your site in search results.
+
+**SO** right before you push your website up, make sure to always run `hugo` and then `flyctl deploy`
+
+```console
+$ hugo
+Start building sites …
+hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec+extended darwin/arm64 BuildDate=2024-03-20T11:40:10Z VendorInfo=brew
+
+
+                   | EN
+-------------------+-----
+  Pages            | 34
+  Paginator pages  |  0
+  Non-page files   | 14
+  Static files     | 10
+  Processed images | 32
+  Aliases          |  9
+  Cleaned          |  0
+
+Total in 93 ms
+
+$ flyctl deply
+```
 
 ## Feedback
 
