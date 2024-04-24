@@ -298,7 +298,7 @@ $ docker build -t myblog .
 Once built, you can launch your blog with
 
 ```console
-$ docker run -d -p 8043:80 myblog
+$ docker run -d -p 80:8043 myblog
 ```
 
 Because the server we chose uses port 8043, we just need to redirect requests to the right ports.
