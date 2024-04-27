@@ -3,6 +3,7 @@ title = 'Spicy Sausage and Rice'
 date = 2024-04-09T12:40:00+01:00
 tags = ['recipe', 'food']
 draft = false
+summary = "Recipe: A great dish for experimenting, try changing both the sausage type and spice level for endless variety. The original version of this recipe is from watching Gordon Ramsay prepare this dish on YouTube."
 +++
 
 {{<lead>}}

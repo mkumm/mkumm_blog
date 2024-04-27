@@ -11,5 +11,7 @@ hugo.exe
 hugo.darwin
 hugo.linux
 
+.zig
+
 # Temporary lock file while building
 /.hugo_build.lock

@@ -3,7 +3,7 @@
     <div class="relative">
         <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
         <div class="mx-auto w-full">
-            <div class="relative shadow-xl sm:overflow-hidden pt-12">
+            <div class="relative shadow-xl sm:overflow-hidden pt-20">
                 <div class="absolute inset-0">
                     {{ $homepageImage := "" }}
                     {{ with .Site.Params.defaultBackgroundImage }}
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="relative mt-3 flex px-4 py-4 sm:px-4 sm:py-6 lg:py-8 lg:px-8 max-w-5xl mx-auto">
-                    <div class="center px-3">
+                    <div class="center px-9">
                     {{ with .Site.Author.image }}
                         {{ $authorImage := "" }}
                             {{ $authorImage = resources.Get . }}
@@ -37,13 +37,13 @@
                             {{ if not $disableImageOptimization }}
                                 {{ $authorImage = $authorImage.Fill "288x288" }}
                             {{ end }}
-                            <img class="rounded-2xl h-24 w-24 border-2 mt-0 mx-auto" width="144" height="144"
+                            <img class="rounded-full h-24 w-24 border-2 border-neutral-500 mt-0 mx-auto" width="144" height="144"
                                 alt="{{ $.Site.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                         {{ end }}
                     {{ end }}
                     </div>
 
-                    <div>
+                    <div class="ml-6">
                     <h1 class="mb-0 text-lg sm:text-2xl sm:mb-0 font-extrabold text-neutral-200">
                         {{ .Site.Author.name | default .Site.Title }}
                     </h1>

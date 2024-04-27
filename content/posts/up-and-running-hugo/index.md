@@ -3,6 +3,7 @@ title = 'Up and Running With Hugo'
 date = 2024-04-15T12:40:00+01:00
 tags = ['go', 'dev', 'blog', 'hugo', 'blowfish']
 draft = false
+summary = "A straightforward 'up and running' guide for hosting a static site using Hugo, Blowfish, and Fly.io. designed for individuals with basic technical skills."
 +++
 
 {{<lead>}}
@@ -450,9 +451,9 @@ hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec+extended darwin/arm64 Bui
 
 Total in 93 ms
 
-$ flyctl deply
+$ flyctl deploy
 ```
 
 ## Feedback
 
-I hope you found this post helpful. Feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) with any feedback or questions.
+ I hope you found this post helpful. Feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) email me at [mike @ mkumm.com](mailto:mike@mkumm.com) with any feedback or questions.

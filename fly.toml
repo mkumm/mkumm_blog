@@ -9,14 +9,21 @@ primary_region = 'waw'
 [build]
 
 [http_service]
-  internal_port = 8043
+#internal_port = 8043
+  internal_port = 80
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
 
+[mounts]
+  source="config_data"
+  destination="/config_data"
+
 [[vm]]
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+
+  
