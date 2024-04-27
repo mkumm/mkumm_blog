@@ -23,13 +23,13 @@
                     {{ if $homepageImage }}
                     <img class="h-full w-full object-cover m-0" alt="hero image" src="{{ $homepageImage.RelPermalink }}">
                     <div
-                        class="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-700 dark:from-primary-600 dark:to-secondary-800 mix-blend-multiply">
+                        class="absolute inset-0 bg-gradient-to-l from-neutral-200 to-neutral-500 mix-blend-multiply">
                     </div>
                     {{ end }}
                 </div>
 
                 <div class="relative mt-3 flex px-4 py-4 sm:px-4 sm:py-6 lg:py-8 lg:px-8 max-w-5xl mx-auto">
-                    <div class="center px-9">
+                    <div class="center px-2 md:px-4 lg:pl-6">
                     {{ with .Site.Author.image }}
                         {{ $authorImage := "" }}
                             {{ $authorImage = resources.Get . }}
@@ -37,7 +37,7 @@
                             {{ if not $disableImageOptimization }}
                                 {{ $authorImage = $authorImage.Fill "288x288" }}
                             {{ end }}
-                            <img class="rounded-full h-24 w-24 border-2 border-neutral-500 mt-0 mx-auto" width="144" height="144"
+                            <img class="rounded-md h-36 w-36 mt-0 mx-auto" width="144" height="144"
                                 alt="{{ $.Site.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                         {{ end }}
                     {{ end }}
