@@ -1,3 +1,7 @@
 max-w-prose {
     @apply max-w-[125ch];
 }
+
+@font-face {
+    font-family: basic-sans, sans-serif;
+}
