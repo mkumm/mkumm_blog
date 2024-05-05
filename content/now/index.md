@@ -26,9 +26,13 @@ Poland for me has been very peaceful and very affordable. Not to mention most of
 I will have a full post on the move from Detroit to Krakow before too long. If you have any questions, feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) or email me at [mike @ mkumm.com](mailto:mike@mkumm.com).
 
 
-## Nauka języka polskiego
+## Nauka języka polskiego (Learning Polish)
 
 I am finally learning to speak Polish. Progress is slow, but steady and I am finally really enjoying it. If you are also interested in learning Polish, I recommend reaching out to [Glossa](https://e-polish.eu/polish-for-foreigners). They can help people in any geography to learn Polish. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz)!
+
+## Meditation Practice
+
+I have been practicing meditation semi-regularly for the last 10 years. I am currently rebooting (maybe we can call it "beginner's mind?") my practice using [The Way App](https://www.thewayapp.com/) from Henry Shukman after listening to an [interview with Kevin Rose](https://www.kevinrose.com/the-mysteriousunsolvable-zen-koans-henry-shukman-associate-master-of-sanbo-zen/). If you are new, or feeling a little stuck with your meditation practice, maybe give this one a try.
 
 ## Current Hobbies
 
