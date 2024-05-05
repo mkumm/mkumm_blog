@@ -10,7 +10,7 @@ I was born in a suburb of Detroit and I am now living in Krakow, Poland. I work 
 
 ## Current Work
 
-My full time day job lets me work in Elixir for a company that supplies data to sports books; two things I love! I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and Surface. I am starting to get more interested in Compilers and Site Reliability Engineering as well as continuing to master Elixir/Phoenix and its ecosystem.
+Working at [Simplebet](https://www.simplebet.ai/) lets me work in Elixir for a company that supplies data to sports books; two things I really love! I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and [Surface](https://surface-ui.org/).
 
 ## Previous Work
 

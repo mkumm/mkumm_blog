@@ -1,7 +1,7 @@
 ---
 title: "What I'm Doing Now"
 description: "Based on Sive.rs fine example"
-date: 2024-05-04T04:14:54-08:00
+date: 2024-05-05T04:14:54-08:00
 draft: false
 type: "page"
 ---
@@ -13,7 +13,19 @@ This is a [now page](https://nownownow.com/about). Derek Siver has inspired [a f
 :poland: Updated May 5, 2024 from Poland!
 
 ## Working at Simplebet!
-I am happily employed at [Simplebet](https://www.simplebet.ai/) as an Elixir Developer. This is where I learned how great  [Surface](https://surface-ui.org/) is for building components in [Phoenix](https://www.phoenixframework.org/).
+
+Working at [Simplebet](https://www.simplebet.ai/) lets me work in Elixir for a company that supplies data to sports books; two things I really love! I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and [Surface](https://surface-ui.org/).
+
+I am starting to get more interested in Compilers and Site Reliability Engineering as well as working to master the rest of Elixir/Phoenix and its ecosystem.
+
+There is enough life/work balance that I have enough time to go deep on things like Compilers, Site Reliability Engineering, and other programming languages (especially the obscure ones that nobody will pay me to write).
+
+## Living in Poland
+I have been living in Krakow, Poland for the last 2 years and I really love it. We have a very modest apartment but the location is excellent. We are few hundred yards away from a beer garden, a farmer's market, 2 regular markets and a tram stop. From the tram we can be in the city center in 20 minutes.
+
+Poland for me has been very peaceful and very affordable. Not to mention most of Europe is less than a 2 hour flight away with RT prices starting at like $50.
+
+I will have a full post on the move from Detroit to Krakow before too long. If you have any questions, feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) or email me at [mike @ mkumm.com](mailto:mike@mkumm.com).
 
 
 ## Nauka języka polskiego
@@ -35,6 +47,7 @@ I am having a blast creating music on [Ableton](https://www.ableton.com/), I jus
 - Writing with my incredibly affordable [Pilot Fountain Pen](https://www.jetpens.com/Pilot-Metropolitan-Fountain-Pen-Black-Plain-Fine-Nib/pd/12075) and my [Bullet Journal](https://www.jetpens.com/Leuchtturm1917-Bullet-Journal-2nd-Edition-Medium-A5-Dark-Blue-Dotted/pd/36141).
 - Quite possibly my favorite coffees on the planet are from [Kelleran](https://kellerancoffee.pl/). Apologies for those not in Krakow.
 - I can't believe how much I love my [MacBook Air (M3)](https://www.apple.com/macbook-air/) - so light, great battery and performance. The perfect grab and go laptop.
+- I finally invested in a camera that wasn't also my phone. Love my [Nikon z50](https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/) for it's portability and the amazing photos it captures.
 
 ## Currently Studying/Reading
 
