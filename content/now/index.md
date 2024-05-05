@@ -16,9 +16,7 @@ This is a [now page](https://nownownow.com/about). Derek Siver has inspired [a f
 
 Working at [Simplebet](https://www.simplebet.ai/) lets me work in Elixir for a company that supplies data to sports books; two things I really love! I work with an amazingly supportive team with some of the brightest in the Elixir community. We work mainly in Elixir, Phoenix, LiveView, and [Surface](https://surface-ui.org/).
 
-I am starting to get more interested in Compilers and Site Reliability Engineering as well as working to master the rest of Elixir/Phoenix and its ecosystem.
-
-There is enough life/work balance that I have enough time to go deep on things like Compilers, Site Reliability Engineering, and other programming languages (especially the obscure ones that nobody will pay me to write).
+Life/work balance is great and I have enough time to go deep on other things I enjoy like Compilers, Site Reliability Engineering, and more obscure programming languages (especially the ones that nobody will pay me to write).
 
 ## Living in Poland
 I have been living in Krakow, Poland for the last 2 years and I really love it. We have a very modest apartment but the location is excellent. We are few hundred yards away from a beer garden, a farmer's market, 2 regular markets and a tram stop. From the tram we can be in the city center in 20 minutes.
