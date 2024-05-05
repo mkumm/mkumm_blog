@@ -1,7 +1,7 @@
 ---
 title: "What I'm Doing Now"
 description: "Based on Sive.rs fine example"
-date: 2024-04-13T04:14:54-08:00
+date: 2024-05-04T04:14:54-08:00
 draft: false
 type: "page"
 ---
@@ -10,15 +10,15 @@ type: "page"
 This is a [now page](https://nownownow.com/about). Derek Siver has inspired [a few nowers](https://nownownow.com/) so far. If you have your own site, you should consider adding your **Now** page to the collection.
 {{< /lead >}}
 
-:poland: Updated April 13, 2024 from Poland!
+:poland: Updated May 5, 2024 from Poland!
 
-## Still Working at Simplebet!
+## Working at Simplebet!
+I am happily employed at [Simplebet](https://www.simplebet.ai/) as an Elixir Developer. This is where I learned how great  [Surface](https://surface-ui.org/) is for building components in [Phoenix](https://www.phoenixframework.org/).
 
-Stories of my unemployment have been greatly exaggerated. I reposted a LinkedIn story about a coworker who is currenlty open for work and somehow that ended up being attributed to me in people's feeds. Even some of my close friends thought I was unemployed! :see_no_evil:
 
 ## Nauka języka polskiego
 
-I am finally learning to speak Polish. Progress is slow, but steady and I am finally really enjoying it. If you are also interested in learning Polish, I recommend reaching out to [Glossa](https://e-polish.eu/polish-for-foreigners). They can help people in any geogrophy to learn Polish. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz)!
+I am finally learning to speak Polish. Progress is slow, but steady and I am finally really enjoying it. If you are also interested in learning Polish, I recommend reaching out to [Glossa](https://e-polish.eu/polish-for-foreigners). They can help people in any geography to learn Polish. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz)!
 
 ## Current Hobbies
 
@@ -30,11 +30,21 @@ Thanks to 'Chicago Mike' I am really starting to enjoy chess. I am learning on [
 
 I am having a blast creating music on [Ableton](https://www.ableton.com/), I just wish I had more time to create. I also rely on tools from [Rogue Amoeba](https://rogueamoeba.com/), especially [loopback](https://rogueamoeba.com/loopback/).
 
+## (Physical) Things I Am Enjoying
+
+- Writing with my incredibly affordable [Pilot Fountain Pen](https://www.jetpens.com/Pilot-Metropolitan-Fountain-Pen-Black-Plain-Fine-Nib/pd/12075) and my [Bullet Journal](https://www.jetpens.com/Leuchtturm1917-Bullet-Journal-2nd-Edition-Medium-A5-Dark-Blue-Dotted/pd/36141).
+- Quite possibly my favorite coffees on the planet are from [Kelleran](https://kellerancoffee.pl/). Apologies for those not in Krakow.
+- I can't believe how much I love my [MacBook Air (M3)](https://www.apple.com/macbook-air/) - so light, great battery and performance. The perfect grab and go laptop.
+
 ## Currently Studying/Reading
+
+### FrontendMasters
+
+Replacing YouTube time with [FrontendMasters](https://frontendmasters.com/) has helped me reset my passion for learning all things code related.
 
 ### Strange Loops
 
-I am working through [I Am A Strange Loop](https://www.amazon.com/Am-Strange-Loop-Douglas-Hofstadter-ebook/dp/B004PYDBS0/) with a couple of friends. I got through about 1/2 the book about 10 years ago and have been meaning to read it through for a while. I am really looking forward to the converations that will come from reading this book with some friends.
+I am working through [I Am A Strange Loop](https://www.amazon.com/Am-Strange-Loop-Douglas-Hofstadter-ebook/dp/B004PYDBS0/) with a couple of friends. I got through about 1/2 the book about 10 years ago and have been meaning to read it through for a while. I am really looking forward to the conversations that will come from reading this book with some friends.
 
 ### Compilers
 
