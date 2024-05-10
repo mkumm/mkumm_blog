@@ -1,4 +1,4 @@
-# first_hop.livemd
+# Untitled notebook
 
 ```elixir
 Mix.install([
@@ -20,24 +20,4 @@ AMQP.Queue.declare(channel, "sneakers")
 
 ```elixir
 AMQP.Basic.publish(channel, "", "sneakers", "Setec Astronomy")
-```
-
-```elixir
-defmodule Receive do
-  def wait_for_messages do
-    receive do
-      {:basic_deliver, payload, _meta} ->
-        IO.puts("Received: #{payload}")
-        wait_for_messages()
-    end
-  end
-end
-```
-
-```elixir
-AMQP.Basic.consume(channel, "sneakers", nil, no_ack: true)
-```
-
-```elixir
-Receive.wait_for_messages()
 ```

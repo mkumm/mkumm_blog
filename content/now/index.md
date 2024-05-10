@@ -38,7 +38,7 @@ I have been practicing meditation semi-regularly for the last 10 years. I am cur
 
 ### Chess
 
-Thanks to 'Chicago Mike' I am really starting to enjoy chess. I am learning on [Chess.com](https://www.chess.com) and play (losing) matches on [lichess](https://lichess.org/) - feel free to request a game! I'm _'mrkumm'_ on both platforms.
+Thanks to 'Chicago Mike' I am really starting to enjoy chess. I am learning on [Chess.com](https://www.chess.com) and play (losing) matches on [lichess](https://lichess.org/) - feel free to [request a game](https://lichess.org/@/mrkumm)! I'm _'mrkumm'_ on both platforms.
 
 ### Music Creation
 
