@@ -13,7 +13,7 @@ This introductory guide will walk you through setting up a local RabbitMQ sandbo
 ## RabbitMQ First Hop
 
 For whatever reason, you have decided to jump into learning RabbitMQ. The
-[RabbitMQ Website](https://www.rabbitmq.com/) is a fantastic resource, but can be overwhelming as an introduction and difficult to extrapolate to your local system for further exploration. What follows is the introduction I wish I had when starting out with RabbitMQ.
+[RabbitMQ Website](https://www.rabbitmq.com/) is a fantastic resource, but can be overwhelming as an introduction and difficult to extrapolate to your local system for further exploration. What follows is the introduction I wish I had when starting to learn RabbitMQ.
 
 ## What We Are Going To Do
 
@@ -73,7 +73,7 @@ If you are able to see something similar to the above image, you have done every
 Let's install the Node.js [client library for RabbitMQ](https://www.npmjs.com/package/rabbitmq-client)
 
 ```console
-npm -i rabbitmq-client
+npm install rabbitmq-client
 ```
 
 We only have a single file to create, so wherever you like, save the following as `consumer.js`.
