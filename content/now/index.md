@@ -71,3 +71,4 @@ I was intimidated to start "The Dragon Book" [Compilers: Principles, Techniques,
 - [Cursed Bunny](https://www.amazon.com/Cursed-Bunny-Bora-Chung-ebook/dp/B0CLL1MSS1) Uncomfortable fiction, but it's fun to read and the stories stay with you.
 - [Hidden Potential](https://www.amazon.com/Hidden-Potential-Science-Achieving-Greater-ebook/dp/B0C5LN1BCM) My first Adam Grant book. Enjoying it, but at 25% of the way in I am still waiting for the grand reveal.
 - [Engineering Elixir Applications](https://pragprog.com/titles/beamops/engineering-elixir-applications/) I am only 3 chapters in, but wow this is a fun book! Exceedingly easy to code along with the author. I am garbage at DevOps, this book may help!
+- [Notes on Data Structures and Programming Techniques](https://www.cs.yale.edu/homes/aspnes/classes/223/notes.html) or as a [free ePub](/notes_on_data_structures.epub). Really about the best C resource I have come across. I highly recommend if you are interested in C.
