@@ -16,7 +16,7 @@ The following is what I did, as a noob in the Vim ecosystem, to configure Neovim
 
 ## Context
 
-All of my attempts to adopt Vim as my daily editor ended in frustration. Endless configuration options and no clear path for the beginner (like me) to have Neovim just work. I wanted a "Zen of Python" approach to Vim setup and configuration, but I kept getting Perl versions (there should be **no** clear correct way to do something -- *citation needed*). 
+All of my attempts to adopt Vim as my daily editor ended in frustration. Endless configuration options and no clear path for the begginner (like me) to have Neovim just work. I wanted a "Zen of Python" approach to Vim setup and configuration, but I kept getting Perl versions (there should be **no** clear correct way to do something -- *citation needed*). 
 
 My attempts included: 
 - Reading through Neovim's documentation
@@ -24,11 +24,11 @@ My attempts included:
 - Installing several "distributions" like LunarVIM
 - Trying Evil mode (Emacs with Vim keys) 
 
-With each attempt I would hit some _magic_ or complexity that I didn't understand and couldn't figure out how to override. On the occasion that things worked, some little update/change would break my configuration and the rest of the day was spent fixing it. 
+With each attempt I would hit some _magic_ or complexity that I didn't understand and couldn't figure out how to override. On the occaison that things worked, some little update/change would break my configuration and the rest of the day was spent fixing it. 
 
 ## A New Way Forward
 
-### The "Kickstart" I Needed
+### The Kickstart I Needed
 
 [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) spoke to me. Not a distribution, but a "starting point for Neovim that is: Small, Single-file, Completely Documented". I watched [the video](https://www.youtube.com/watch?v=m8C0Cq9Uv9o) and if there was a T-shirt I probably would have bought it as well. With new hope, I went to work. 
 
@@ -36,7 +36,9 @@ I blew away any lingering Vim configuration files on my mac and went through the
 
 ### Lazy
 
-Kickstart.nvim comes with a single configuration file that uses [Lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins. By modifying the included single file `~/.config/nvim/init.lua`, you can control just about everything. Change the file, then Vim command `:Lazy` *(I)nstall*. The only issue I had was that _elixir-ls_ wouldn't start.  
+Kickstart.nvim comes with a single configuration file that uses [Lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins. By modifying the included single file `~/.config/nvim/init.lua`, you can control just about everyhting. Change the file, then Vim command `:Lazy` *(I)nstall*. The only issue I had was that _elixir-ls_ wouldn't start.  
+
+Also give Lazy a health check by running the Vim command `:checkhealth lazy` and follow the recommendations.
 
 ### The Important Places
 
