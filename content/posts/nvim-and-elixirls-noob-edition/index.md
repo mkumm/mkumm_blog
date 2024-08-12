@@ -16,7 +16,7 @@ The following is what I did, as a noob in the Vim ecosystem, to configure Neovim
 
 ## Context
 
-All of my attempts to adopt Vim as my daily editor ended in frustration. Endless configuration options and no clear path for the begginner (like me) to have Neovim just work. I wanted a "Zen of Python" approach to Vim setup and configuration, but I kept getting Perl versions (there should be **no** clear correct way to do something -- *citation needed*). 
+All of my attempts to adopt Vim as my daily editor ended in frustration. Endless configuration options and no clear path for the beginner (like me) to have Neovim just work. I wanted a "Zen of Python" approach to Vim setup and configuration, but I kept getting Perl versions (there should be **no** clear correct way to do something -- *citation needed*). 
 
 My attempts included: 
 - Reading through Neovim's documentation
@@ -24,7 +24,7 @@ My attempts included:
 - Installing several "distributions" like LunarVIM
 - Trying Evil mode (Emacs with Vim keys) 
 
-With each attempt I would hit some _magic_ or complexity that I didn't understand and couldn't figure out how to override. On the occaison that things worked, some little update/change would break my configuration and the rest of the day was spent fixing it. 
+With each attempt I would hit some _magic_ or complexity that I didn't understand and couldn't figure out how to override. On the occasion that things worked, some little update/change would break my configuration and the rest of the day was spent fixing it. 
 
 ## A New Way Forward
 
@@ -36,19 +36,17 @@ I blew away any lingering Vim configuration files on my mac and went through the
 
 ### Lazy
 
-Kickstart.nvim comes with a single configuration file that uses [Lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins. By modifying the included single file `~/.config/nvim/init.lua`, you can control just about everyhting. Change the file, then Vim command `:Lazy` *(I)nstall*. The only issue I had was that _elixir-ls_ wouldn't start.  
-
-Also give Lazy a health check by running the Vim command `:checkhealth lazy` and follow the recommendations.
+Kickstart.nvim comes with a single configuration file that uses [Lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins. By modifying the included single file `~/.config/nvim/init.lua`, you can control just about everything. Change the file, then Vim command `:Lazy` *(I)nstall*. Also give Lazy a health check by running the Vim command `:checkhealth lazy` and follow the recommendations. The only issue I had was that _elixir-ls_ wouldn't start.  
 
 ### The Important Places
 
-I found some cruft going through `~/.config/nvim` and `~/.local/*` that I needed to get rid of that was conflicting with my new install (I think). In the process of cleaning things up I came across Mason which turned out to be the key utility I needed to understand better.  
+I found some cruft going through `~/.config/nvim` and `~/.local/*` that I needed to get rid of that was conflicting with my new install (I think). I also came across Mason which turned out to be the key utility I needed to get elixir-ls installed and available to my configuration.   
 
 ### Mason-ery
 
 [Mason](https://github.com/williamboman/mason.nvim) takes care of managing the dependencies for Neovim configurations. In my case I had to delete my existing elixir-ls files and re-install them using the Vim command `:MasonInstall elixir-ls`. With all the pieces in place, and old pieces removed, I got everything working to my delight. 
 
-The following is the short process I followed on my other macs to get everything working. Hopeful they will work for you. 
+The following is the short process I followed on my other macs to get everything working. Hopefully they will work for you. 
 
 ## Setup Neovim with Elixir-ls
 
@@ -58,10 +56,10 @@ The following is the short process I followed on my other macs to get everything
 
 ### 1. kickstart.nvim
 
-Just follow the directions. I am not sure how valuable forking the repository is, but everything else made sense to me. Especially make sure you remove (or move) your previous Vim configuration files and packages from `~./config/nvim` and `~/.local/share`, `~/.local/bin`, `~/.local/state`.
+Just follow the [directions from kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim?tab=readme-ov-file#installation). I am not sure how valuable forking the repository is, but everything else made sense to me. Especially make sure you remove (or move) your previous Vim configuration files and packages from `~./config/nvim` and `~/.local/share`, `~/.local/bin`, `~/.local/state`.
 
 ### 2. Edit your init.lua file
-Edit your `~/.config/nvim/init.lua`. Yep, it's okay!
+Edit your `~/.config/nvim/init.lua`. Yep, it's okay! If something goes wrong just reset it back to the original file. 
 
 Add `elixirls = {}`  under `local servers = {...`
 
@@ -122,4 +120,8 @@ A few commands that I found helpful working with Neovim as an IDE.
 
 ## Happy Coding!
 
+Of course this is just the start of working with Neovim, but it is a solid foundation that is highly usable. A solid platform for your own self-learning and experimentations. 
 
+## Feedback
+
+I hope you found this post helpful. Feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) email me at [mike @ mkumm.com](mailto:mike@mkumm.com) with any feedback or questions.
