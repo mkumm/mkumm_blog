@@ -1,0 +1,56 @@
+{{ $constrainItemsWidth := .Page.Site.Params.list.constrainItemsWidth | default false }}
+
+{{ $articleClasses := "flex flex-wrap article" }}
+
+{{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+
+{{ with .Params.externalUrl }}
+<a class="{{ $articleClasses }}" href="{{ . }}" target="_blank" rel="external">
+  {{ else }}
+<div class="max-w-prose">
+  <a class="{{ $articleClasses }} max-w-prose  max-h-36" href="{{ .RelPermalink }}">
+    {{ end }}
+    {{- with $.Params.images -}}
+    {{- range first 6 . }}
+    <meta property="og:image" content="{{ . | absURL }}" />{{ end -}}
+    {{- else -}}
+    {{- $images := $.Resources.ByType "image" -}}
+    {{- $featured := $images.GetMatch "*feature*" -}}
+    {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+    {{ if and .Params.featureimage (not $featured) }}
+    {{- $url:= .Params.featureimage -}}
+    {{ $featured = resources.GetRemote $url }}
+    {{ end }}
+    {{- if not $featured }}{{ with .Site.Params.defaultFeaturedImage }}{{ $featured = resources.Get . }}{{ end }}{{ end -}}
+    {{ if .Params.hideFeatureImage }}{{ $featured = false }}{{ end }}
+    {{- with $featured -}}
+    {{ if or $disableImageOptimization (strings.HasSuffix $featured ".svg")}}
+        {{ with . }}
+        {{ end }}
+      {{ else }}
+        {{ with .Resize "600x"  }}
+        <div class="bg-cover rounded-full w-24 h-24 mr-6" style="background-image:url({{ .RelPermalink }});"></div>
+        {{ end }}
+      {{ end }}
+    {{- else -}}
+    {{- with $.Site.Params.images }}
+    <meta property="og:image" content="{{ index . 0 | absURL }}" />{{ end -}}
+    {{- end -}}
+    {{- end -}}
+
+
+    <div class="prose article">
+      <div class="items-center text-left text-xl font-semibold">
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+         href="{{ .RelPermalink }}">{{ .Title | emojify }}</div>
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      </div>
+      {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <div class="py-1 max-w-fit prose dark:prose-invert text-sm ">
+       {{ .Summary | emojify }}
+      </div>
+      {{ end }}
+    </div>
+  </a>
+    </div>
