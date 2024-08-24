@@ -28,17 +28,4 @@ I have been living in Krakow, Poland for nearly 3 years and I really love it. We
 
 I am finally learning to speak Polish. Progress is slow, but I am finally really enjoying it. If you are also interested in learning Polish I recommend reaching out to [Glossa](https://e-polish.eu/polish-for-foreigners). They can help people in any geography to learn Polish. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz)!
 
-## Meditation Practice
-
-I have been practicing meditation semi-regularly for the last 10 years. I am currently rebooting (maybe we can call it "beginner's mind?") my practice using [The Way App](https://www.thewayapp.com/) from Henry Shukman after listening to an [interview with Kevin Rose](https://www.kevinrose.com/the-mysteriousunsolvable-zen-koans-henry-shukman-associate-master-of-sanbo-zen/). If you are new, or feeling a little stuck with your meditation practice, maybe give this one a try.
-
-## Current Hobbies
-
-### Chess
-
-Thanks to 'Chicago Mike' I am really starting to enjoy chess. I am learning on [Chess.com](https://www.chess.com) and play (losing) matches on [lichess](https://lichess.org/) - feel free to [request a game](https://lichess.org/@/mrkumm)! I'm _'mrkumm'_ on both platforms.
-
-### Music Creation
-
-I am having a blast creating music on [Ableton](https://www.ableton.com/), I just wish I had more time to create. I also rely on tools from [Rogue Amoeba](https://rogueamoeba.com/), especially [loopback](https://rogueamoeba.com/loopback/).
-
+## What's Working for Me
