@@ -28,3 +28,4 @@ I have been living in Krakow, Poland for nearly 3 years and I really love it. We
 
 I am finally learning to speak Polish. Progress is slow, but I am finally really enjoying it. If you are also interested in learning Polish I recommend reaching out to [Glossa](https://e-polish.eu/polish-for-foreigners). They can help people in any geography to learn Polish. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz)!
 
+## What's Working for Me

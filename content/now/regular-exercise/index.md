@@ -9,20 +9,26 @@ summary = "I was really beginning to lose energy, not making it through a typica
 
 ## Problem
 
-My energy levels were getting so bad I was having trouble making it through the day without a nap. By Saturday I barely had enough energy to enjoy part of the weekend.
+My energy level was getting really bad and I was having trouble making it through the day. By Saturday I barely had enough energy to enjoy even a small part of the weekend. I decided I needed to see if there was something I could do.
 
 ## Decision
 
-I decided I had to do something. I time-boxed 6 weeks to make raising my energy levels my highest priority. Higher than my work, other commitments everything. After getting blood work and not seeing anything obvious that would affect my energy, I tried a few things. What worked best for me was good old exercise. I have a gym less than a 10 minute walk and so I signed up pretty much sight unseen just because of how close it was (and pretty cheap). 
+I time-boxed 6 weeks to make improving my energy level my highest priority. After getting blood work and not seeing anything obvious, I started reading and experimenting. I won't share everything, but I "discovered" what most people already know.
 
-## What I am Doing
+## What's Working
 
-4 days a week I walk to my gym before our morning coffee and ride the bike 20 minutes, 10 minutes on the treadmill and a little lifting. 3 days a week I walk at least 30 minutes and 1 day off. 
-
-I tend to cook most of my meals, so that wasn't difficult but I did cut out most of the snacking and keep sugary and highly-processed foods down maybe 90% from where I was. 
+Exercise and a change to my eating habits. 
+- 4 days a week I walk to my gym before my morning coffee
+   - ride the bike 20 minutes
+   - 10 minutes on the treadmill
+   - little lifting. 
+- 3 days a week I walk at least 30 minutes.
+- Eating on a normal schedule (9:30, 12:30, 3:30, 6:30)
+- Big reduction in sugar and highly-processed foods
+- Taught myself "taking a break" does not mean "eat junk food"
 
 ## Results
 
-In the three weeks that I have been exercising my energy is back to where it was several years ago. I have Peter Attia to thank (from his podcast and book) to encourage me to just start where I am and make sure that I keep a sustainable, but improving pace. 
+In the three weeks that I have been exercising my energy is back to where it was several years ago. I have [Peter Attia](https://peterattiamd.com/) to thank (podcast and book) to encourage me to just start where I am and make sure that I keep a sustainable schedule and effort level. Increase effort when I am ready. I haven't lost any kilograms yet, but my clothes fit better which is a great bonus. 
 
-My clothes are fitting better as well. 
+

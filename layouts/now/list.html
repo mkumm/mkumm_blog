@@ -63,9 +63,6 @@
         <section class="max-w-prose article prose">
             {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
             {{ if $groupByYear }}
-            <div class="mt-6 text-2xl font-bold text-neutral-700 dark:text-n-300">
-            What's Working for Me
-            </div>
         <p class="">A somewhat random list of thoughts, services, experiments, and products that I am really appreciating at the moment.</p>
             {{ end }}
             {{ range .Pages }}
