@@ -10,12 +10,8 @@ summary = "I really enjoy shaving again. For a few cents a blade and an affordab
 Merkur Mk34c Double Edge Razor
 {{</lead>}}
 
-## Context
+## My Shave
 
-I think everyone understands that 5-blade razors and the prices they charge are pretty silly. After getting bombarded by social media adds for a simple (but expensive) single-blade razor, I started to look around. Found this little gem for about 1/3 of the price of the "social media ads" on Amazon [Merkur Mk34c Razor](https://www.amazon.com/dp/B002A8JO1Q).
+A year ago I started to see adds in my social media feeds for a single-blade razor that looked pretty good, but the price sounded high. Found this little gem for about 1/3 of the price of the advertised blade on Amazon [Merkur Mk34c Razor](https://www.amazon.com/dp/B002A8JO1Q) and I love it.
 
-## 1 Year Later
-
-Still using my razor six times a week and enjoying the morning shave. Hard to communicate what is so satisfying about it, but if you haven't shaved with a basic safety blade, give a try! You may really enjoy it and end up saving a lot of money! 
-
-By the way, these blades ([Astra blades](https://www.amazon.com/dp/B001QY8QXM) ) are less than $10 for a 100. Not even close to running out yet. 
+I really enjoy the feeling of shaving with a single blade again. You start to understand why they used to call shaving a "scrape" - in a good way. For blades I use [Astra blades](https://www.amazon.com/dp/B001QY8QXM) which run about 8 cents each. 

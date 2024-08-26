@@ -12,16 +12,16 @@ summary = "My decision to focus on fewer things has shown me how to get much mor
 
 ## Context
 
-I came across a Field Notes notebook from 2 years ago that contained a well thought out list of what was critically important to accomplish during the next year. I remember writing the list and thinking there was a lot on this list that needed to get done and perhaps I should trim it a little. I couldn't find a single thing (of the 20 items) on the list that was not critical to complete.
+A few months after writing my annual plan, all the things I HAVE TO get done for the year, I happened on one of my older notebooks from 3 years prior. I looked through and to my disappointment found my 3-years-old annual plan was about the same as the one I just write this year. 
 
-I think you can guess that virtually everything on that list was still on my list this year. I had dabbled with every single items and completed almost nothing
+I learned the hard way how difficult it is to make progress on our most important goals without focused effort.
 
-## Learning
+## I Am Learning
 
-[Cal Newport](https://calnewport.com/) helped me articulate things that I felt but didn't really know how to act on. I have been reading his books and taking his advice like a doctor handing me scripts. 
+[Cal Newport](https://calnewport.com/) helped me articulate things that I felt but didn't really know how to act on. I have been reading his books and taking his advice with a good result. 
 
 ## Results
 
-For the last 12 weeks I have set a key priority for each 6 week block. In that time I look to either accomplish something important of develop a new habit that will help sustain me when I will be focusing on the next thing. With the new mindset in place I find myself staying with projects until they are complete and not picking up projects that I don't feel I can take to a good stopping point. Suprisingly, I find this mindset carries over into my daily work, staying with hard problems much longer than I used to.  
+I am learning to do more over time, I need to focus on and work on less in the present. Of course I am early in this new process but I am encouraged. I have already completed 2 things that were on my list 3 years ago.  
 
 Maybe check out Cal's new book [Slow Productivity](https://calnewport.com/slow/).

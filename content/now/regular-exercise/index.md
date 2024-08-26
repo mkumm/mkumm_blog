@@ -13,22 +13,23 @@ My energy level was getting really bad and I was having trouble making it throug
 
 ## Decision
 
-I time-boxed 6 weeks to make improving my energy level my highest priority. After getting blood work and not seeing anything obvious, I started reading and experimenting. I won't share everything, but I "discovered" what most people already know.
+I time-boxed 6 weeks to look for ways to improve my energy. Making this my highest priority. After getting blood work and ruling out anything major, I started experimented with eating habits, supplements, and exercise. I won't share everything, but I "discovered" what most people already know.
 
 ## What's Working
 
 Exercise and a change to my eating habits. 
 - 4 days a week I walk to my gym before my morning coffee
-   - ride the bike 20 minutes
-   - 10 minutes on the treadmill
-   - little lifting. 
+   - Ride the bike 20 minutes.
+   - Treadmill for 10 minutes.
+   - Move heavy things. 
 - 3 days a week I walk at least 30 minutes.
 - Eating on a normal schedule (9:30, 12:30, 3:30, 6:30)
 - Big reduction in sugar and highly-processed foods
 - Taught myself "taking a break" does not mean "eat junk food"
+- And supplements for me were not a contributing factor.
 
 ## Results
 
-In the three weeks that I have been exercising my energy is back to where it was several years ago. I have [Peter Attia](https://peterattiamd.com/) to thank (podcast and book) to encourage me to just start where I am and make sure that I keep a sustainable schedule and effort level. Increase effort when I am ready. I haven't lost any kilograms yet, but my clothes fit better which is a great bonus. 
+In the three weeks that I have been exercising my energy is back to "normal" for me. I have [Peter Attia](https://peterattiamd.com/) to thank (podcast and book) to encourage me to just start where I am and make sure that I keep a sustainable schedule and effort level. I have been increase effort when I am ready and I have no desire to do too much too soon. I haven't lost any kilograms yet, but my clothes fit noticeably better which is a great bonus. 
 
 
