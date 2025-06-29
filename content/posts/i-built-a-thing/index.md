@@ -15,7 +15,7 @@ It's one thing to work on a big projects with a team, another to go solo and see
 
 ## Why
 
-I had just purchased a software conference ticket and someone from work suggested I purchase one of those digital business cards. I never heard of it. I did a little research and just felt I could this for less money then what it would cost me to purchase "their" solution.
+I had just purchased a software conference ticket and someone from work suggested I purchase one of those digital business cards. I never heard of it. I did a little research and just felt I could build something like this for less money then what it would cost me to purchase "their" solution.
 
 Additionally I have been itching to build something new from scratch. Something more than a single page app, but nothing as crazy as an enterprise platform to do whatever. Building a lightweight NFC card with some basic functionality hit the sweet spot.
 
@@ -32,9 +32,9 @@ I gave myself a month to put together a prototype and enough extras that someone
 
 ### In short
 
-- 30 days of available time (roughly 40 hours)
+- 30 days (roughly 40 hours) to create the prototype
 - $100 of total budget
-- build with Elixir/Phoenix/LiveView
+- Build with Elixir/Phoenix/LiveView
 
 ## Prototype
 
@@ -44,13 +44,13 @@ I gave myself a month to put together a prototype and enough extras that someone
 - Be able to tap a card and view a profile with a vCard download option
 - Be able to scan a code and view a profile with a vCard download option
 - Make sure there were no inherent security blockers from Android or iPhone
-- Validate as quick and as cheap as possible
+- Prototype as quick and as cheap as possible
 
 It did not take long to land on both QR Codes and NFC tap technology. I ordered some very cheap writable NFC cards from Amazon. To write to those cards I found [NFC Tools](https://apps.apple.com/us/app/nfc-tools/id1252962749), a free (although I upgraded for maybe $5) NFC writer.
 
-To view the profile and download the vCard I just need a single page where the tap/scan would open a static profile and a button to download a vCard. I used [Netlify](https://www.netlify.com/) and their free tier to host the page. On a side note the folks over at Netlify seem really nice, I hope I get to use them for some future project. Learning the vCard spec wasn't too bad and in the end there is a lot of sample data to help get you going.
+To view the profile and download the vCard I just needed a single webpage where the tap/scan would open a static profile and a button to download a vCard. I used [Netlify](https://www.netlify.com/) and their free tier to host that one static page. On a side note the folks over at Netlify seem really nice, I hope I get to use them for some future project. Learning the vCard spec wasn't too bad and there is a lot of sample data to get you started.
 
-Everything worked as expected. The novelty of the tap was fun for the people I asked to give it a try. Within the first week I had a working prototype and enough confidence that I could build something useful.
+Everything worked as expected. The novelty of the tap was fun for the people. Within the first week I had a working prototype and enough confidence that I could build something people would at least hav a little fun with.
 
 **Total Cost (so far)**: $10
 
@@ -64,15 +64,15 @@ Everything worked as expected. The novelty of the tap was fun for the people I a
 
 ## vMVP (Very Minimally Viable Product)
 
-Here the process of talking with real-world potential users of the product started. I had started with a vague idea around a dynamic configuration; that a single card should be able to open different profiles.
+Here the process of talking with real-world potential users started. I had started with a vague idea around a dynamic configuration; that a single card should be able to open different profiles.
 
-I settled in on getting a working version of the basic idea up as quick as possible. I ended up partnering with a 3rd-party to professionally print our logo on NFC cards (with a couple custom-branded sample cards). Each card was uniquely identified with an ID and the QR code was printed on the back of each card.
+I settled in on getting a working version of the basic idea up as quick as possible. I ended up partnering with a printer to professionally create some NFC cards (with a couple custom-branded cards). Each card was uniquely identified with an ID and the QR code was printed on the back of each card.
 
 I didn't want users to just sign-up at this point so I put up a wait-list form and removed the ability to register. I had a very basic admin section where I could create new users but I couldn't even delete users from the admin yet.
 
-I added cards and profiles to user accounts. They could edit the form with their information and configure their card to any profile they had in their account
+I added multiple cards and multiple profiles to some test accounts. A user could now edit their profile with a basic form. They could also select which profile each card would open. It was basic, but usable in the real-world.
 
-Once I got some cards in the hands of some users, I learned 3 key things.
+It did not take long to learn 3 important things.
 
 1. Some users would like to bypass their profile and link directly to their Calendly/Instagram/website.
 2. Some users wanted to receive contact information from other people more than they wanted to give contact information. Collect cards, not give them.
@@ -111,6 +111,15 @@ AI (Claude in my case) was really helpful at assisting with many of those second
 
 In the end I probably built too much (_It's an old Dean Martin recipe_ :) ) but it was increasingly difficult to get users to interact with the product without the additional features. So now I am feature complete from the first learning and ready for the next batch of "If it only did..."
 
+Big feature adds included:
+
+- Configure any card to open a profile or any other url.
+- Add as many social (links) buttons to a profile.
+- Added an option to display a share back button on the profile, so the user can receive contact info.
+- Some additional configuration on the profile (change background color).
+- Robust admin section.
+- I did not implement the ability to use the profile page as a user's "website"
+
 **Total Cost (so far)**: $150
 
 - $85 from previous section
@@ -119,4 +128,4 @@ In the end I probably built too much (_It's an old Dean Martin recipe_ :) ) but 
 
 **Total Time (so far)**:  about 140 hours
 
-A little over budget in both time and money, but I ended up doing a lot more than I originally though. I still don’t know if this is just a hobby or something people would actually pay for. Maybe I’ll write a follow-up when I figure that out. For now, I’m proud of what I’ve built—and grateful for the folks who gave it a try.
+A little over budget in both time and money, but I ended up doing a lot more than I originally planned. I still don’t know if this is just a hobby or something people would actually pay for. Maybe I’ll write a follow-up when I figure that out. For now, I’m proud of what I’ve built—and grateful for the folks who gave it a try.
