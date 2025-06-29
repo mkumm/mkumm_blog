@@ -16,7 +16,7 @@ It's one thing to work on a big projects with a team, another to go solo and see
 
 ## Why
 
-I had just purchased a software conference ticket and someone from work suggested I purchase one of those digital business cards. I never heard of it. I did a little research and just felt I could build something like this for less money then what it would cost me to purchase "their" solution.
+I had just purchased a software conference ticket and someone from work suggested I purchase one of those digital business cards. I never heard of it. I did a little research and found several companies offering very nice digital cards. I just felt I could build something similar for about the same cost as their offerings.
 
 Additionally I have been itching to build something new from scratch. Something more than a single page app, but nothing as crazy as an enterprise platform to do whatever. Building a lightweight NFC card with some basic functionality hit the sweet spot.
 
@@ -50,7 +50,7 @@ It did not take long to land on both QR Codes and NFC tap technology. I ordered 
 
 To view the profile and download the vCard I just needed a single webpage where the tap/scan would open a static profile and a button to download a vCard. I used [Netlify](https://www.netlify.com/) and their free tier to host that one static page. On a side note the folks over at Netlify seem really nice, I hope I get to use them for some future project. Learning the vCard spec wasn't too bad and there is a lot of sample data to get you started.
 
-Everything worked as expected. The novelty of the tap was fun for the people. Within the first week I had a working prototype and enough confidence that I could build something people would at least hav a little fun with.
+Everything worked as expected. The novelty of the tap was fun for the people. Within the first week I had a working prototype and enough confidence that I could build something people would at least have a little fun with.
 
 **Total Cost (so far)**: $10
 
