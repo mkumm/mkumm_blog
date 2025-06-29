@@ -9,27 +9,28 @@ summary = "I was really beginning to lose energy, not making it through a typica
 
 ## Problem
 
-My energy level was getting really bad and I was having trouble making it through the day. By Saturday I barely had enough energy to enjoy even a small part of the weekend. I decided I needed to see if there was something I could do.
+My energy levels had gotten really low—I was struggling to make it through the day. By Saturday, I barely had enough energy to enjoy even a small part of the weekend. I decided it was time to see if there was something I could do.
 
 ## Decision
 
-I time-boxed 6 weeks to look for ways to improve my energy. Making this my highest priority. After getting blood work and ruling out anything major, I started experimented with eating habits, supplements, and exercise. I won't share everything, but I "discovered" what most people already know.
+I gave myself a six-week window to make improving my energy my top priority. After getting blood work done and ruling out anything serious, I began experimenting with eating habits, supplements, and exercise. I won’t list everything I tried, but I basically “discovered” what most people already know.
 
-## What's Working
+## What’s Working
 
-Exercise and a change to my eating habits. 
-- 4 days a week I walk to my gym before my morning coffee
-   - Ride the bike 20 minutes.
-   - Treadmill for 10 minutes.
-   - Move heavy things. 
-- 3 days a week I walk at least 30 minutes.
-- Eating on a normal schedule (9:30, 12:30, 3:30, 6:30)
-- Big reduction in sugar and highly-processed foods
-- Taught myself "taking a break" does not mean "eat junk food"
-- And supplements for me were not a contributing factor.
+What’s made the biggest difference: exercise and a few changes to my eating habits.
+
+- **4 days a week**: I walk to my gym before my morning coffee
+  - 20 minutes on the bike
+  - 10 minutes on the treadmill
+  - Move heavy things
+- **3 days a week**: I walk at least 30 minutes
+- I eat on a regular schedule: 9:30, 12:30, 3:30, 6:30
+- I’ve greatly reduced sugar and highly processed foods
+- I taught myself that “taking a break” doesn’t mean “eating junk food”
+- Supplements didn’t make a noticeable difference for me
 
 ## Results
 
-In the three weeks that I have been exercising my energy is back to "normal" for me. I have [Peter Attia](https://peterattiamd.com/) to thank (podcast and book) to encourage me to just start where I am and make sure that I keep a sustainable schedule and effort level. I have been increase effort when I am ready and I have no desire to do too much too soon. I haven't lost any kilograms yet, but my clothes fit noticeably better which is a great bonus. 
+Three weeks into this routine, my energy is back to what I consider "normal." I haven’t lost any kilograms yet, but my clothes fit noticeably better—which is a great bonus.
 
-
+I have [Peter Attia](https://peterattiamd.com/) to thank (both his podcast and book) for encouraging me to start where I am and focus on a sustainable pace. I’ve been increasing effort only when I feel ready—and I have no desire to overdo it.

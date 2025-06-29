@@ -12,16 +12,18 @@ summary = "My decision to focus on fewer things has shown me how to get much mor
 
 ## Context
 
-A few months after writing my annual plan, all the things I HAVE TO get done for the year, I happened on one of my older notebooks from 3 years prior. I looked through and to my disappointment found my 3-years-old annual plan was about the same as the one I just write this year. 
+A few months after writing my annual plan—all the things I *have to* get done this year—I came across one of my old notebooks from three years ago. As I flipped through it, I was disappointed to see that my goals back then looked almost identical to the ones I had just written.
 
-I learned the hard way how difficult it is to make progress on our most important goals without focused effort.
+That moment made something very clear: it's incredibly hard to make progress on our most important goals without focused effort.
 
 ## I Am Learning
 
-[Cal Newport](https://calnewport.com/) helped me articulate things that I felt but didn't really know how to act on. I have been reading his books and taking his advice with a good result. 
+[Cal Newport](https://calnewport.com/) helped me articulate feelings I couldn't quite explain, and gave me tools to act on them. I've been reading his books and applying his advice, and the results so far have been really encouraging.
 
 ## Results
 
-I am learning to do more over time, I need to focus on and work on less in the present. Of course I am early in this new process but I am encouraged. I have already completed 2 things that were on my list 3 years ago.  
+I'm learning that if I want to do *more* over time, I need to focus on *less* in the present.
 
-Maybe check out Cal's new book [Slow Productivity](https://calnewport.com/slow/).
+I'm still early in this new approach, but I already feel the momentum. I've even completed two things that had been sitting on my list for three years.
+
+If this resonates with you, I recommend checking out Cal's latest book: [Slow Productivity](https://calnewport.com/slow/).

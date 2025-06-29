@@ -7,25 +7,32 @@ type: "page"
 ---
 
 {{< lead >}}
-This is a [now page](https://nownownow.com/about). Derek Siver has inspired [a few nowers](https://nownownow.com/) so far. If you have your own site, you should consider adding your **Now** page to the collection.
+This is a [now page](https://nownownow.com/about). Derek Sivers has inspired [a growing number of “nowers”](https://nownownow.com/) to create these. If you have your own site, you should consider adding a **Now** page too.
 {{< /lead >}}
 
-:poland: Updated August 10, 2024 from Poland!
+:poland: Updated June 29, 2025 — from Poland!
 
 ## Open Office Hours
 
-Feel free to [book 15 minutes with me](https://fantastical.app/sprytna/open-office). Invitation is open to anyone, although I only speak English. 
+Feel free to [book 15 minutes with me](https://fantastical.app/sprytna/open-office). Anyone is welcome—just note that I only speak English.
 
-## Working at Simplebet!
+## Working at DraftKings
 
-Working at [Simplebet](https://www.simplebet.ai/) lets me code in **Elixir** for a company that supplies data to **Sports Books**; two things I really love! I also get to with amazingly supportive people; some of the brightest in the Elixir community.
+I'm currently working at [DraftKings](https://www.draftkings.com/), where I get to write **Elixir** for one of the largest online sportsbooks and casinos—two things I'm passionate about. I'm fortunate to work with some of the brightest and most supportive people in the Elixir community.
+
 
 ## Living in Poland
 
-I have been living in Krakow, Poland for nearly 3 years and I really love it. We have a very modest apartment but the location is excellent. We are few hundred yards away from a beer garden, my gym, a farmer's market, 2 regular markets and a tram stop. From the tram we can be in the city center in 20 minutes. Not to mention most of Europe is less than a 2 hour flight away with round trip prices often under $100.
+I've been living in Kraków, Poland for nearly four years, and I really love it. Our apartment is modest, but the location is fantastic—we're just a few hundred yards from a beer garden, my gym, a farmer's market, two regular grocery stores, and a tram stop. The city center is just 20 minutes away, and cheap round-trip flights put most of Europe within easy reach.
+
+
+## I Built a Thing
+
+I was inspired by people building useful little products, so I decided to try it myself. In about three months (and under $100), I launched [Sprytna.Cards](https://sprytna.cards/) to beta. I'm not sure yet if it can become something people would pay for—but I do have some early adopters who would be genuinely disappointed if it disappeared. That feels like a good start.
+
 
 ## Nauka języka polskiego (Learning Polish)
 
-I am finally learning to speak Polish. Progress is slow, but I am finally really enjoying it. If you are also interested in learning Polish I recommend reaching out to [Glossa](https://e-polish.eu/polish-for-foreigners). They can help people in any geography to learn Polish. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz)!
+I'm finally learning to speak Polish. Progress is slow, but I'm really enjoying it. If you're also interested in learning Polish, I highly recommend [Glossa](https://e-polish.eu/polish-for-foreigners)—they work with students worldwide. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz), my wonderful teacher!
 
 ## What's Working for Me
