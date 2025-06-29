@@ -128,4 +128,4 @@ Big feature adds included:
 
 **Total Time (so far)**:  about 140 hours
 
-A little over budget in both time and money, but I ended up doing a lot more than I originally planned. I still don’t know if this is just a hobby or something people would actually pay for. Maybe I’ll write a follow-up when I figure that out. For now, I’m proud of what I’ve built—and grateful for the folks who gave it a try.
+A little over budget in both time and money, but I ended up doing a lot more than I originally planned. I still don’t know if this is just a personal hobby project or something other's could also use. Maybe I’ll write a follow-up when I figure that out. For now, I’m proud of what I’ve built—and grateful for the folks who gave it a try.
