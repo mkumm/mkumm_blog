@@ -3,7 +3,7 @@ title = 'I Built a Thing'
 date = 2025-06-29T12:08:40+02:00
 tags = ['elixir', 'buildInPublic', 'dev']
 draft = false
-summary = "It's one thing to work on a big projects with a team, another to go solo and see if you can still develop something useful as a solo developer. This is my 3 month journey to building Sprytna.cards"
+summary = "It is one thing to work on a big projects with a team, another to go solo and see if you can still develop something useful as a solo developer. This is my 3 month journey to building Sprytna.cards"
 +++
 
 {{<lead>}}
