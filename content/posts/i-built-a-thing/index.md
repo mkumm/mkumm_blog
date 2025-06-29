@@ -11,6 +11,7 @@ summary = "It's one thing to work on a big projects with a team, another to go s
 {{</lead>}}
 
 ## Intro
+
 It's one thing to work on a big projects with a team, another to go solo and see if you can still develop something useful as a solo developer. This is my 3 month journey to building [Sprytna.cards](https://sprytna.cards).
 
 ## Why
@@ -18,7 +19,6 @@ It's one thing to work on a big projects with a team, another to go solo and see
 I had just purchased a software conference ticket and someone from work suggested I purchase one of those digital business cards. I never heard of it. I did a little research and just felt I could build something like this for less money then what it would cost me to purchase "their" solution.
 
 Additionally I have been itching to build something new from scratch. Something more than a single page app, but nothing as crazy as an enterprise platform to do whatever. Building a lightweight NFC card with some basic functionality hit the sweet spot.
-
 
 ## Self-Imposed Constraints
 
