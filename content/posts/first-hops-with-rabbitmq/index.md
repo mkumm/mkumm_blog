@@ -29,6 +29,7 @@ For whatever reason, you have decided to jump into learning RabbitMQ. The
 You should have some comfort with the terminal. All examples here were created from a Mac, you will need to adjust based on your OS.
 
 We will need Docker, Node, and Elixir's Livebook.
+
 - If you don't have Docker installed, you should do that now [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 - If you don't have Node installed, you can follow one of the options here: [Nodejs.org](https://nodejs.org/en).
 - If you don't have Elixir/Livebook installed, you can follow one of the options here: [Livebook Installation](https://github.com/livebook-dev/livebook#installation). If you don't need Elixir on your system, you will want to use the Docker option. If you already have Elixir installed, you can optionally just use `iex` or create an `.exs` file.
@@ -41,7 +42,8 @@ That's all we need for the rest of this walk-through.
 $ docker run -d --rm --name rabbitmq -p 5675:5672 -p 15675:15672 rabbitmq:3.13-management
 ```
 
-### What we did
+### What we did (1)
+
 We asked Docker to run the official [RabbitMQ Container](https://hub.docker.com/_/rabbitmq).
 
 - `rabbitmq:3.13-management` is the name of the container we want to get from [Docker Hub](https://hub.docker.com/)
@@ -98,14 +100,14 @@ amqp.connect('amqp://localhost:5675', function(_, connection) {
 });
 ```
 
-### What we did
+### What we did (2)
 
 - :3 require our AMQP library
 - :5 connect to RabbitMQ on our custom port
 - :9 we create (or confirm) the queue we want to listen to, "sneakers" in our case
 - :13 we start consuming messages and print the 'msg' to the screen.
 
-### Run It!
+### Run It
 
 ```console
 $ node consumer.js
@@ -172,7 +174,7 @@ $ node consumer.js
 Setec Astronomy
 ```
 
-### What we did
+### What we did (3)
 
 We wrote a little Elixir in Livebook that connected to RabbitMQ, established a connection, and sent a message to the queue of our choosing. We also saw the message we sent was received and displayed by the small JavaScript file we have running.
 
@@ -209,6 +211,7 @@ RabbitMQ has a lot to offer and there is a lot to learn. As a next step start pl
 I hope you found this post helpful. Feel free to [DM on Twitter @mkumm](https://twitter.com/mkumm) or email me at [mike @ mkumm.com](mailto:mike@mkumm.com) with any feedback or questions.
 
 ## Endnotes
+
 - The Consumer JavaScript file can be downloaded from Github [consumer.js](https://gist.github.com/mkumm/796aa5cea1da55fc8c237afe205f0ded)
 - The producer Livebook can be downloaded from Github [producer.livemd](https://gist.github.com/mkumm/44201228a601e7b9d8974a3bfc96e4c2).
 - The banner image was generated from [Midjourney](https://www.midjourney.com/) with the prompt "wide field with mountains in the background. A small factory in the distance. In the foreground are small bunny rabbits playing in the grass." The image's width was expanded with Adobe Photoshop's Generative Fill Feature.

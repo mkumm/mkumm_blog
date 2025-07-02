@@ -4,19 +4,19 @@
   {{ end }} flex flex-col items-center justify-center text-center max-w-5xl mx-auto px-6">
   <header class="relative px-1 py-1 flex flex-col items-center mb-3 mt-24 max-w-5xl mx-auto">
     {{ with .Site.Author.image }}
-      {{ $authorImage := "" }}
-      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-        {{ $authorImage = resources.GetRemote . }}
-      {{ else }}
-        {{ $authorImage = resources.Get . }}
-      {{ end }}
-      {{ if $authorImage }}
-        {{ if not $disableImageOptimization }}
-          {{ $authorImage = $authorImage.Fill "288x288" }}
-        {{ end }}
-        <img class="mb-2 rounded-full h-36 w-36" width="144" height="144" alt="{{ $.Site.Author.name | default " Author" }}"
-          src="{{ $authorImage.RelPermalink }}" />
-      {{ end }}
+    {{ $authorImage := "" }}
+    {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+    {{ $authorImage = resources.GetRemote . }}
+    {{ else }}
+    {{ $authorImage = resources.Get . }}
+    {{ end }}
+    {{ if $authorImage }}
+    {{ if not $disableImageOptimization }}
+    {{ $authorImage = $authorImage.Fill "288x288" }}
+    {{ end }}
+    <img class="mb-2 rounded-full h-36 w-36" width="144" height="144" alt="{{ $.Site.Author.name | default " Author" }}"
+      src="{{ $authorImage.RelPermalink }}" />
+    {{ end }}
     {{ end }}
 
     <h1 class="text-4xl font-extrabold">
@@ -29,6 +29,16 @@
     {{ end }}
     <div class="mt-1 text-2xl">
       {{ partialCached "author-links.html" . }}
+    </div>
+
+    <!-- Virtual Coffee CTA -->
+    <div class="mt-4">
+      <a href="https://fantastical.app/sprytna/virtual-coffee-30-minutes" target="_blank" rel="noopener">
+        <button
+          class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 font-medium py-2 px-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+          ☕ Schedule 30-Minute Virtual Coffee
+        </button>
+      </a>
     </div>
   </header>
 

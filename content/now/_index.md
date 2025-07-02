@@ -16,7 +16,15 @@ This is a [now page](https://nownownow.com/about). Derek Sivers has inspired [a 
 
 ## Open Office Hours
 
-Feel free to [book 15 minutes with me](https://fantastical.app/sprytna/open-office). Anyone is welcome—just note that I only speak English.
+I love meeting new people and helping however I can. Anyone is welcome—just note that I only speak English.
+
+<div class="my-6">
+  <a href="https://fantastical.app/sprytna/virtual-coffee-30-minutes" target="_blank" rel="noopener">
+    <button class="coffee-button inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 font-semibold py-3 px-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+      ☕ Schedule 30-Minute Virtual Coffee
+    </button>
+  </a>
+</div>
 
 ## Working at DraftKings
 
@@ -37,4 +45,4 @@ I was inspired by people building useful little products, so I decided to try it
 
 I'm finally learning to speak Polish. Progress is slow, but I'm really enjoying it. If you're also interested in learning Polish, I highly recommend [Glossa](https://e-polish.eu/polish-for-foreigners)—they work with students worldwide. A special thank you to [Magdalena](https://e-polish.eu/en/polish_teachers_online/magdalena_wygladacz), my wonderful teacher!
 
-## What's Working for Me
+### Stuff I'm Liking

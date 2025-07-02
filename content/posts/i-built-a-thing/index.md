@@ -12,7 +12,7 @@ summary = "It is one thing to work on a big projects with a team, another to go 
 
 ## Intro
 
-It's one thing to work on a big projects with a team, another to go solo and see if you can still develop something useful as a solo developer. This is my 3 month journey to building [Sprytna.cards](https://sprytna.cards).
+It's one thing to work on a big projects with a team, another to see if you can still develop something useful as a solo developer. This is my 3 month journey to building [Sprytna.cards](https://sprytna.cards).
 
 ## Why
 
