@@ -1,4 +1,4 @@
-max-w-prose {
+.max-w-prose {
     @apply max-w-[125ch];
 }
 
@@ -6,10 +6,183 @@ h1 {
     font-family: soleil, sans-serif;
     font-weight: 700;
     font-style: normal;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: soleil, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 h3 {
-font-family: basic-sans, sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-family: basic-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -0.015em;
 }
+
+.prose {
+    @apply text-base leading-relaxed;
+}
+
+.prose p {
+    @apply mb-6;
+}
+
+.prose blockquote {
+    @apply border-l-4 border-primary-500 pl-6 italic text-neutral-700 dark:text-neutral-300;
+    @apply bg-neutral-50 dark:bg-neutral-800/50 py-4 my-6 rounded-r-lg;
+}
+
+.prose code:not(pre code) {
+    @apply bg-primary-50 dark:bg-primary-900/30 text-primary-800 dark:text-primary-200;
+    @apply px-2 py-1 rounded text-sm font-medium;
+}
+
+.prose pre {
+    @apply rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700;
+}
+
+.article-card {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply bg-white dark:bg-neutral-900 rounded-xl;
+    border: none !important;
+}
+
+.article-card:hover {
+    @apply shadow-xl shadow-primary-500/10;
+}
+
+/* Remove borders from homepage recent articles */
+.article.border {
+    border: none !important;
+}
+
+.homepage-hero {
+    @apply bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20;
+    @apply rounded-2xl p-8 mb-12;
+}
+
+.tag-cloud a {
+    @apply inline-block px-3 py-1 m-1 text-sm font-medium rounded-full;
+    @apply bg-primary-100 text-primary-800 hover:bg-primary-200;
+    @apply dark:bg-primary-800/30 dark:text-primary-200 dark:hover:bg-primary-700/40;
+    @apply transition-colors duration-200;
+}
+
+.article-meta {
+    @apply text-sm text-neutral-600 dark:text-neutral-400;
+    @apply flex items-center gap-4 mb-4;
+}
+
+.article-meta svg {
+    @apply w-4 h-4;
+}
+
+
+.hero-gradient {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500;
+    @apply bg-clip-text text-transparent;
+}
+
+.section-divider {
+    @apply border-t border-neutral-200 dark:border-neutral-700 my-12;
+}
+
+.reading-progress {
+    @apply fixed top-0 left-0 w-full h-1 bg-primary-500 z-50;
+    @apply transition-all duration-300;
+}
+
+/* Enhanced Navigation Styling */
+.main-menu nav a {
+    position: relative !important;
+    padding: 8px 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+.main-menu nav a::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, #0ea5e9, #06b6d4) !important;
+    transition: all 0.3s ease !important;
+    transform: translateX(-50%) !important;
+}
+
+.main-menu nav a:hover::after {
+    width: 70% !important;
+}
+
+/* Search button styling */
+button#search-button,
+button#search-button-mobile {
+    padding: 0.5rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid transparent !important;
+}
+
+button#search-button:hover,
+button#search-button-mobile:hover {
+    background-color: rgba(249, 115, 22, 0.1) !important;
+    border-color: rgba(249, 115, 22, 0.2) !important;
+}
+
+/* Mobile menu hamburger button */
+#menu-button .cursor-pointer {
+    padding: 0.5rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+#menu-button .cursor-pointer:hover {
+    background-color: rgba(249, 115, 22, 0.1) !important;
+}
+
+.card-hover-effect {
+    @apply transform transition-all duration-300 hover:scale-105;
+}
+
+/* Enhanced "All Posts" button fill animation */
+div.mt-10.flex.justify-center a button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.2));
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+div.mt-10.flex.justify-center a button:hover::before {
+    height: 100%;
+}
+
+div.mt-10.flex.justify-center a button:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+div.mt-10.flex.justify-center a button:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+.text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
+}
+
+/* Remove borders from now page cards */
+section.grid .min-h-full.bg-neutral.border {
+    border: none !important;
+}
+

@@ -111,7 +111,18 @@
 
                 {{ partial "series/series-closed.html" . }}
                 {{ partial "sharing-links.html" . }}
+                
+                <!-- Now page specific child posts as cards -->
+                {{ if eq .Section "now" }}
+                <h2 class="mt-8 text-2xl font-extrabold mb-6">What's Working for Me</h2>
+                <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {{ range .Page.RegularPages }}
+                  {{ partial "article-link/card.html" . }}
+                  {{ end }}
+                </section>
+                {{ else }}
                 {{ partial "related.html" . }}
+                {{ end }}
             </div>
 
             {{ $translations := .AllTranslations }}

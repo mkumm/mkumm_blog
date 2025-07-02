@@ -4,6 +4,8 @@ description: "Based on Sive.rs fine example"
 date: 2024-08-09T04:14:54-08:00
 draft: false
 type: "page"
+cardView: true
+groupByYear: false
 ---
 
 {{< lead >}}
