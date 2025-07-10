@@ -19,10 +19,8 @@ This is a [now page](https://nownownow.com/about). Derek Sivers has inspired [a 
 I love meeting new people and helping however I can. Anyone is welcome—just note that I only speak English.
 
 <div class="my-6">
-  <a href="https://fantastical.app/sprytna/virtual-coffee-30-minutes" target="_blank" rel="noopener">
-    <button class="coffee-button inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 font-semibold py-3 px-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
-      ☕ Schedule 30-Minute Virtual Coffee
-    </button>
+  <a href="https://fantastical.app/sprytna/virtual-coffee-30-minutes" target="_blank" rel="noopener" style="display: inline-block; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; border: 2px solid currentColor; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: fit-content;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)';" onmouseout="this.style.backgroundColor='transparent';">
+    ☕ Schedule 30-Minute Virtual Coffee
   </a>
 </div>
 

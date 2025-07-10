@@ -7,7 +7,94 @@
 <h2 class="mt-8 text-xl text-neutral-600 italic font-extrabold mb-6">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
 
 {{ if and .Site.Params.homepage.cardView (not .Site.Params.homepage.cardViewScreenWidth) | default false }}
-  {{ partial "recent-articles/cardview.html" . }}
+  <!-- CUSTOM CARD VIEW - DIRECT INLINE -->
+  <section class="w-full">
+    <div class="homepage-cards-grid" style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: stretch;">
+      <style>
+        @media (min-width: 1024px) {
+          .homepage-cards-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+      </style>
+      {{ range first $recentArticles (.Paginate (where .Site.RegularPages "Type" "in"
+      .Site.Params.mainSections)).Pages }}
+      <div style="display: flex; height: 100%;">
+        <!-- DIRECT CARD HTML - NO PARTIAL -->
+        {{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+        {{ with .Params.externalUrl }}
+        <a href="{{ . }}" target="_blank" rel="external" class="block w-full">
+          {{ else }}
+          <a href="{{ .RelPermalink }}" class="block w-full">
+            {{ end }}
+            <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-sm relative" style="background-color: white !important;">
+              {{- with .Params.images -}}
+              {{- range first 6 . }}
+              <meta property="og:image" content="{{ . | absURL }}" />{{ end -}}
+              {{- else -}}
+              {{- $images := .Resources.ByType "image" -}}
+              {{- $featured := $images.GetMatch "*feature*" -}}
+              {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+              {{ if and .Params.featureimage (not $featured) }}
+              {{- $url:= .Params.featureimage -}}
+              {{ $featured = resources.GetRemote $url }}
+              {{ end }}
+              {{- if not $featured }}{{ with .Site.Params.defaultFeaturedImage }}{{ $featured = resources.Get . }}{{ end }}{{ end -}}
+              {{ if .Params.hideFeatureImage }}{{ $featured = false }}{{ end }}
+              {{- with $featured -}}
+              {{ if or $disableImageOptimization (strings.HasSuffix $featured ".svg")}}
+                {{ with . }}
+                <div class="w-full thumbnail_card nozoom" style="background-image:url({{ .RelPermalink }});"></div>
+                {{ end }}
+              {{ else }}
+                {{ with .Resize "600x" }}
+                <div class="w-full thumbnail_card nozoom" style="background-image:url({{ .RelPermalink }});"></div>
+                {{ end }}
+              {{ end }}
+              {{- else -}}
+              {{- with .Site.Params.images }}
+              <meta property="og:image" content="{{ index . 0 | absURL }}" />{{ end -}}
+              {{- end -}}
+              {{- end -}}
+
+              {{ if and .Draft .Site.Params.article.showDraftLabel }}
+              <span class="absolute top-0 right-0 m-2">
+                {{ partial "badge.html" (i18n "article.draft" | emojify) }}
+              </span>
+              {{ end }}
+
+              <div class="px-6 py-4">
+                {{ with .Params.externalUrl }}
+                <div>
+                  <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+                    {{ $.Title | emojify }}
+                    <span class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500">
+                      <span class="rtl:hidden">&#8599;</span>
+                      <span class="ltr:hidden">&#8598;</span>
+                    </span>
+                  </div>
+                </div>
+                {{ else }}
+                <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="{{ .RelPermalink }}">{{ .Title | emojify }}</div>
+                {{ end }}
+
+                <div class="text-sm text-neutral-500 dark:text-neutral-400">
+                  {{ partial "article-meta/basic.html" . }}
+                </div>
+
+                {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+                <div class="py-1 prose dark:prose-invert">
+                  {{ .Summary | emojify }}
+                </div>
+                {{ end }}
+              </div>
+              <div class="px-6 pt-4 pb-2"></div>
+            </div>
+          </a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
 {{ else if and .Site.Params.homepage.cardView .Site.Params.homepage.cardViewScreenWidth | default false }}
   {{ partial "recent-articles/cardview-fullwidth.html" . }}
 {{ else }}

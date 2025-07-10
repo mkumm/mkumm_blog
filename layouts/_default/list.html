@@ -85,21 +85,139 @@
     <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
         {{ .Key }}
     </h2>
-    <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {{ range .Pages }}
-        {{ partial "article-link/card.html" . }}
-        {{ end }}
+    <!-- CUSTOM HOMEPAGE-STYLE CARDS -->
+    <section class="w-full">
+        <div class="homepage-cards-grid" style="display: flex; flex-direction: column; gap: 2rem; align-items: stretch;">
+          <style>
+            @media (min-width: 1024px) {
+              .homepage-cards-grid {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                flex-direction: unset !important;
+              }
+            }
+          </style>
+          {{ range .Pages }}
+          <div style="display: flex; height: 100%;">
+            {{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+            {{ with .Params.externalUrl }}
+            <a href="{{ . }}" target="_blank" rel="external" class="block w-full">
+              {{ else }}
+              <a href="{{ .RelPermalink }}" class="block w-full">
+                {{ end }}
+                <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-sm relative" style="background-color: white !important;">
+                  {{ $images := .Resources.ByType "image" }}
+                  {{ $featured := $images.GetMatch "*feature*" }}
+                  {{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
+                  {{ if and .Params.featureimage (not $featured) }}
+                    {{- $url:= .Params.featureimage -}}
+                    {{ $featured = resources.GetRemote $url }}
+                  {{ end }}
+                  {{ if $featured }}
+                    {{ if not $disableImageOptimization }}
+                      {{ $featured = $featured.Fill "600x300" }}
+                    {{ end }}
+                    <div class="w-full h-48 bg-cover bg-center" style="background-image: url('{{ $featured.RelPermalink }}');"></div>
+                  {{ end }}
+                  <div class="p-6 flex flex-col h-full">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{{ .Title | emojify }}</h3>
+                    <div class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">
+                      {{ .Date.Format "January 2, 2006" }}
+                    </div>
+                    {{ if .Params.summary }}
+                      <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 flex-grow">{{ .Params.summary | emojify }}</p>
+                    {{ else if .Summary }}
+                      <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 flex-grow">{{ .Summary | emojify }}</p>
+                    {{ end }}
+                    {{ if .Params.tags }}
+                      <div class="flex flex-row flex-wrap items-center" style="margin-top: auto;">
+                        {{ range .Params.tags }}
+                          <span style="margin-top:0.5rem" class="mr-2">
+                            <span class="flex">
+                              <span class="rounded-md border px-2 py-1 text-xs font-normal transition-colors duration-200 cursor-pointer">
+                                {{ . | title }}
+                              </span>
+                            </span>
+                          </span>
+                        {{ end }}
+                      </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </a>
+          </div>
+          {{ end }}
+        </div>
     </section>
     {{ end }}
 
     {{ else }}
 
-    <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-        {{ range .Pages }}
-        {{ partial "article-link/card.html" . }}
-        {{ end }}
-        {{ end }}
+    <!-- CUSTOM HOMEPAGE-STYLE CARDS -->
+    <section class="w-full">
+        <div class="homepage-cards-grid" style="display: flex; flex-direction: column; gap: 2rem; align-items: stretch;">
+          <style>
+            @media (min-width: 1024px) {
+              .homepage-cards-grid {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                flex-direction: unset !important;
+              }
+            }
+          </style>
+          {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
+          {{ range .Pages }}
+          <div style="display: flex; height: 100%;">
+            {{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+            {{ with .Params.externalUrl }}
+            <a href="{{ . }}" target="_blank" rel="external" class="block w-full">
+              {{ else }}
+              <a href="{{ .RelPermalink }}" class="block w-full">
+                {{ end }}
+                <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-sm relative" style="background-color: white !important;">
+                  {{ $images := .Resources.ByType "image" }}
+                  {{ $featured := $images.GetMatch "*feature*" }}
+                  {{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
+                  {{ if and .Params.featureimage (not $featured) }}
+                    {{- $url:= .Params.featureimage -}}
+                    {{ $featured = resources.GetRemote $url }}
+                  {{ end }}
+                  {{ if $featured }}
+                    {{ if not $disableImageOptimization }}
+                      {{ $featured = $featured.Fill "600x300" }}
+                    {{ end }}
+                    <div class="w-full h-48 bg-cover bg-center" style="background-image: url('{{ $featured.RelPermalink }}');"></div>
+                  {{ end }}
+                  <div class="p-6 flex flex-col h-full">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{{ .Title | emojify }}</h3>
+                    <div class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">
+                      {{ .Date.Format "January 2, 2006" }}
+                    </div>
+                    {{ if .Params.summary }}
+                      <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 flex-grow">{{ .Params.summary | emojify }}</p>
+                    {{ else if .Summary }}
+                      <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 flex-grow">{{ .Summary | emojify }}</p>
+                    {{ end }}
+                    {{ if .Params.tags }}
+                      <div class="flex flex-row flex-wrap items-center" style="margin-top: auto;">
+                        {{ range .Params.tags }}
+                          <span style="margin-top:0.5rem" class="mr-2">
+                            <span class="flex">
+                              <span class="rounded-md border px-2 py-1 text-xs font-normal transition-colors duration-200 cursor-pointer">
+                                {{ . | title }}
+                              </span>
+                            </span>
+                          </span>
+                        {{ end }}
+                      </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </a>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
     </section>
 
     {{ end }}
